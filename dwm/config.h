@@ -1,10 +1,10 @@
 static const int GAP_PX      = 18; /* gap pixel between windows */
 static const int start_with_gaps = 1;
-static const int topbar        = 1; /* 0 means bottom bar */
+static const int topbar        = 0; /* 0 means bottom bar */
 
 static int BORDER_PX = 0;
 static const int CORNER_RADIUS = 0;
-static const int BAR_HEIGHT    = 14; // in pixels
+static const int BAR_HEIGHT    = 18; // in pixels
 static const int snap = 0;
 /* static const int round_non_floating = 0; */
 
@@ -17,7 +17,7 @@ static const int warp_mouse = 0;
 
 /* #include "themes/default-theme.h" */
 /* #include "themes/light-and-black.h" */
-#include "/home/mitch/.cache/wal/colors-wal-dwm.h"
+#include "/home/hmps/.cache/wal/colors-wal-dwm.h"
 
 static const char terminal[] = "st";
 static const char editor[] = "nvim";
@@ -26,8 +26,8 @@ static const char scratchpadname[] = "scratchpad";
 /* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL }; */
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "90x26", NULL };
 
-static const int NUM_WORKSPACES=13;
-static const char *tags[] = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
+static const int NUM_WORKSPACES=10;
+static const char *tags[] = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
     /* class      instance    title                 tags mask  iscentered   isfloating   monitor */
@@ -86,7 +86,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0";
 static const char *dmenucmd[] = { "dash", "-c", "${HOME}/bin/menu run -p 'Run:'", NULL };
 
-static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
+//static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
+static const char *surf[] = { "qutebrowser", NULL };
 static const char *chrome[] = { "google-chrome-stable", "--new-window", NULL };
 static const char *term[]  = { "tabbed", "-d", "-c", "-r", "2", "st", "-w", "''", NULL };
 static const char *ranger[] = { "st", "-e", "ranger", NULL };
@@ -111,9 +112,9 @@ static const char *scrot[] = { "scrot", "-z", "-u", NULL };
 static const char *scrap[] = { "scrap", "-u", NULL };
 static const char *brightnessup[] = { "dash", "-c", "${HOME}/bin/bright 10", NULL };
 static const char *brightnessdown[] = { "dash", "-c", "${HOME}/bin/bright -10", NULL };
-/* static const char *record[] = { "dash", "-c", "cd ${HOME}/var/recordings ; ${HOME}/bin/record &", NULL }; */
-/* static const char *togglerecord[] = { "dash", "-c", "${HOME}/bin/record --toggle", NULL }; */
-/* static const char *stoprecord[] = { "dash", "-c", "${HOME}/bin/record --stop", NULL }; */
+static const char *record[] = { "dash", "-c", "cd ${HOME}/var/recordings ; ${HOME}/bin/record &", NULL };
+static const char *togglerecord[] = { "dash", "-c", "${HOME}/bin/record --toggle", NULL };
+static const char *stoprecord[] = { "dash", "-c", "${HOME}/bin/record --stop", NULL };
 //static const char *history[] = { "dhist", NULL };
 
 #include "movestack.c"
@@ -124,7 +125,7 @@ const static Key keys[] = {
     { Mod1Mask,                     33,             spawn,    {.v = dmenucmd } }, // p
     { Mod1Mask,                     36,             spawn,    {.v = term } }, // return
     { Mod1Mask,                     25,             spawn,    {.v = surf } }, // w
-    { Mod1Mask|ShiftMask,           25,             spawn,    {.v = chrome } }, // a
+    { Mod1Mask|ShiftMask,           25,             spawn,    {.v = chrome } }, // w
     { Mod1Mask,                     32,             spawn,    {.v = dedit } }, // o
     { Mod1Mask,                     30,             spawn,    {.v = tasks } }, // u
     { Mod1Mask,                     31,             spawn,    {.v = music } }, // i
@@ -157,9 +158,9 @@ const static Key keys[] = {
     { Mod1Mask|ControlMask,         45,       spawn,          {.v = togglekeyboardlayout }}, // k
     { Mod1Mask|ControlMask,         65,       spawn,          {.v = toggletouchpad }}, // space
     /* // ------------------------------------------------------------------ // */
-    /* { 0,                            74,       spawn,          {.v = record }}, // F8 */
-    /* { 0,                            75,       spawn,          {.v = togglerecord }}, // F9 */
-    /* { 0,                            76,       spawn,          {.v = stoprecord }}, // F10 */
+    { 0,                            74,       spawn,          {.v = record }}, // F8
+    { 0,                            75,       spawn,          {.v = togglerecord }}, // F9
+    { 0,                            76,       spawn,          {.v = stoprecord }}, // F10
     /* // ------------------------------------------------------------------ // */
     { Mod1Mask,                     44,       focusstack,     {.i = +1 } }, // j
     { Mod1Mask,                     45,       focusstack,     {.i = -1 } }, // k
@@ -222,5 +223,5 @@ const static Button buttons[] = {
     /* click                event mask      button          function        argument */
     { ClkClientWin,         Mod1Mask,       Button1,        movemouse,      {0} },
     { ClkClientWin,         Mod1Mask,       Button3,        resizemouse,    {0} },
-    { ClkRootWin,           0,              Button3,        spawn,          SH("/home/mitch/bin/x9term") },
+    { ClkRootWin,           Mod4Mask,       Button1,        spawn,          SH("/home/hmps/bin/x9term") },
 };

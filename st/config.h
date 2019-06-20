@@ -1,18 +1,16 @@
 #include "st-configh-ignores.h"
 
 /* --------------- Font ---------------------------------- */
+char font[] = "SFMono:pixelsize=14:antialias=true:autohint=true";
 /* char font[] = "Terminus:pixelsize=12:antialias=false:autohint=false"; */
-
-char font[] = "Terminus:pixelsize=14:atialias=false:autohint=false";
-//char font[] = "Terminus:pixelsize=18:atialias=false:autohint=false";
-
+/* char font[] = "Terminus:pixelsize=14:antialias=false:autohint=false"; */
 /* char font[] = "xos4 Terminus:pixelsize=14:antialias=false:autohint=false"; */
 //--
 /* char font[] = "Share Tech Mono:pixelsize=16:antialias=true:autohint=true"; */
 //--
 
 /* char font[] = "Share Tech Mono:pixelsize=14:antialias=true:autohint=true"; */
-/* char font[] = "Roboto Mono:pixelsize=16:antialias=true:autohint=true"; */
+/* char font[] = "Roboto Mono:pixelsize=12:antialias=true:autohint=true"; */
 /* char font[] = "GohuFont:pixelsize=12:antialias=false:autohint=false"; */
 /* char font[] = "scientifica:pixelsize=10:antialias=false:autohint=false"; */
 /* char font[] = "MonteCarlo:pixelsize=10:antialias=false:autohint=false"; */
@@ -26,7 +24,7 @@ int borderpx = 22; /* Internal border */
 /* ------------------------------------------------------- */
 
 /* --------------- Themes -------------------------------- */
-#include "/home/mitch/.cache/wal/colors-wal-st.h" // pywal
+#include "/home/hmps/.cache/wal/colors-wal-st.h" // pywal
 /* #include "themes/light-orange-theme.h" */
 /* #include "themes/terminaldotsexy/grayscale-theme.h" */
 

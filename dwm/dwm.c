@@ -1731,22 +1731,22 @@ int xerrorstart(Display *dpy, XErrorEvent *ee) {
 void togglegaps() {
     // todo: make this PerTag
 
-    if(gappx == 0) {
-        gappx = GAP_PX;
-        borderpx = BORDER_PX;
-        system("[ -z \"$(pgrep compton)\" ] && compton &");
-    } else {
-        gappx = 0;
-        borderpx = BORDER_PX - BORDER_PX / 2;
-        if( borderpx % 2 != 0 ) borderpx++;
-        system("[ \"$(pgrep compton)\" ] && pkill -9 compton");
-    }
+    //if(gappx == 0) {
+    //    gappx = GAP_PX;
+    //    borderpx = BORDER_PX;
+    //    system("[ -z \"$(pgrep compton)\" ] && compton &");
+    //} else {
+    //    gappx = 0;
+    //    borderpx = BORDER_PX - BORDER_PX / 2;
+    //    if( borderpx % 2 != 0 ) borderpx++;
+    //    system("[ \"$(pgrep compton)\" ] && pkill -9 compton");
+    // }
 
     // write our new gap config so our bar can read it
     FILE *fgappx = fopen("/tmp/dwm_info/gappx", "w"); fprintf(fgappx, "%d", gappx); fclose(fgappx);
 
     // restart bar with our new gaps so it resizes
-    system("pkill -9 lemonbar ; pkill -9 bar ; bash ${HOME}/bin/bar &");
+    //system("pkill -9 lemonbar ; pkill -9 bar ; bash ${HOME}/bin/bar &");
 
 }
 
@@ -1758,6 +1758,8 @@ void on_start(void) {
     borderpx = BORDER_PX;
     init_dwm_info(gappx, BAR_HEIGHT, topbar, NUM_WORKSPACES);
 
+    system("wal -R");
+    system("compton -b");
     // Note: this is now in ~/.xinitrc
     /* system("/bin/sh ${HOME}/bin/autostart &"); */
 }
