@@ -19,7 +19,7 @@ static const int warp_mouse = 0;
 /* #include "themes/light-and-black.h" */
 #include "/home/hmps/.cache/wal/colors-wal-dwm.h"
 
-static const char terminal[] = "st";
+static const char terminal[] = "uxterm";
 static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
@@ -31,10 +31,6 @@ static const char *tags[] = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }
 
 static const Rule rules[] = {
     /* class      instance    title                 tags mask  iscentered   isfloating   monitor */
-    { "Gimp",     NULL,       "Gimp",                 0,         0,           1,           -1 },
-    { "Image Manipulation Program",     NULL,       "Image Manipulation Program",                 0,         0,           1,           -1 },
-    { "GNU Image Manipulation Program",     NULL,       "GNU Image Manipulation Program",                 0,         0,           1,           -1 },
-
     { "st",              NULL,       "surf-download",     0,         1,           1,           -1 },
     { "st",              NULL,       "surf-translate",    0,         1,           1,           -1 },
     { "surf-download",   NULL,       "surf-download",     0,         1,           1,           -1 },
@@ -87,34 +83,35 @@ static char dmenumon[2] = "0";
 static const char *dmenucmd[] = { "dash", "-c", "${HOME}/bin/menu run -p 'Run:'", NULL };
 
 //static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
-static const char *surf[] = { "qutebrowser", NULL };
-static const char *chrome[] = { "google-chrome-stable", "--new-window", NULL };
-static const char *term[]  = { "tabbed", "-d", "-c", "-r", "2", "st", "-w", "''", NULL };
-static const char *ranger[] = { "st", "-e", "ranger", NULL };
+static const char *surf[]        = { "qutebrowser", NULL };
+static const char *chrome[]      = { "google-chrome-stable", "--new-window", NULL };
+static const char *term[]        = { "tabbed", "-c", "uxterm", "-into", NULL };
+static const char *ranger[]      = { "st", "-e", "ranger", NULL };
 static const char *filechooser[] = { "pcmanfm", NULL };
-static const char *clipboard[] = { "clip", NULL };
-static const char *dedit[] = { "dedit", NULL };
-static const char *tasks[] = { "tasks", NULL };
-static const char *music[] = { "music", NULL };
+static const char *clipboard[]   = { "clip", NULL };
+static const char *dedit[]       = { "dedit", NULL };
+static const char *tasks[]       = { "tasks", NULL };
+static const char *music[]       = { "music", NULL };
 
-static const char *volup[] =   { "dash", "-c", "${HOME}/bin/vol -inc 2 ; vol > /tmp/bar/vol", NULL };
-static const char *voldown[] = { "dash", "-c", "${HOME}/bin/vol -dec 2 ; vol > /tmp/bar/vol", NULL };
+static const char *voltoggle[] = { "dash", "-c", "amixer set Master toggle", NULL };
+static const char *volup[]     = { "dash", "-c", "${HOME}/bin/vol -inc 2 ; vol > /tmp/bar/vol", NULL };
+static const char *voldown[]   = { "dash", "-c", "${HOME}/bin/vol -dec 2 ; vol > /tmp/bar/vol", NULL };
 
-static const char *medianext[] = { "media", "--next", NULL };
-static const char *mediaprev[] = { "media", "--prev", NULL };
-static const char *mediatoggle[] = { "media", "--toggle", NULL };
-static const char *mediaff[] = { "media", "--skip_ahead", NULL };
-static const char *mediarw[] = { "media", "--skip_behind", NULL };
+static const char *medianext[]            = { "media", "--next", NULL };
+static const char *mediaprev[]            = { "media", "--prev", NULL };
+static const char *mediatoggle[]          = { "media", "--toggle", NULL };
+static const char *mediaff[]              = { "media", "--skip_ahead", NULL };
+static const char *mediarw[]              = { "media", "--skip_behind", NULL };
 static const char *togglekeyboardlayout[] = { "dash", "-c", "${HOME}/bin/keys", NULL };
-static const char *toggletouchpad[] = { "bash", "-c", "${HOME}/usr/bin/toggle-touchpad.sh", NULL };
-static const char *lock[] = { "slock", NULL };
-static const char *scrot[] = { "scrot", "-z", "-u", NULL };
-static const char *scrap[] = { "scrap", "-u", NULL };
-static const char *brightnessup[] = { "dash", "-c", "${HOME}/bin/bright 10", NULL };
-static const char *brightnessdown[] = { "dash", "-c", "${HOME}/bin/bright -10", NULL };
-static const char *record[] = { "dash", "-c", "cd ${HOME}/var/recordings ; ${HOME}/bin/record &", NULL };
-static const char *togglerecord[] = { "dash", "-c", "${HOME}/bin/record --toggle", NULL };
-static const char *stoprecord[] = { "dash", "-c", "${HOME}/bin/record --stop", NULL };
+static const char *toggletouchpad[]       = { "bash", "-c", "${HOME}/usr/bin/toggle-touchpad.sh", NULL };
+static const char *lock[]                 = { "slock", NULL };
+static const char *scrot[]                = { "scrot", "-z", "-u", NULL };
+static const char *scrap[]                = { "scrap", "-u", NULL };
+static const char *brightnessup[]         = { "dash", "-c", "${HOME}/bin/bright 10", NULL };
+static const char *brightnessdown[]       = { "dash", "-c", "${HOME}/bin/bright -10", NULL };
+static const char *record[]               = { "dash", "-c", "cd ${HOME}/var/recordings ; ${HOME}/bin/record &", NULL };
+static const char *togglerecord[]         = { "dash", "-c", "${HOME}/bin/record --toggle", NULL };
+static const char *stoprecord[]           = { "dash", "-c", "${HOME}/bin/record --stop", NULL };
 //static const char *history[] = { "dhist", NULL };
 
 #include "movestack.c"
@@ -146,6 +143,7 @@ const static Key keys[] = {
     // xf86 media keys
     { Mod1Mask,                     34,             spawn,    {.v = mediarw }}, // [
     { Mod1Mask,                     35,             spawn,    {.v = mediaff }}, // ]
+    { 0,                            121,            spawn,    {.v = voltoggle }},
     { 0,                            122,            spawn,    {.v = voldown }},
     { 0,                            123,            spawn,    {.v = volup }},
 
@@ -155,8 +153,8 @@ const static Key keys[] = {
 //    { Mod4Mask,                     43,             spawn,    {.v = history } }, // h
 
     { Mod1Mask,                     53,       spawn,          {.v = lock }}, // x
-    { Mod1Mask|ControlMask,         45,       spawn,          {.v = togglekeyboardlayout }}, // k
-    { Mod1Mask|ControlMask,         65,       spawn,          {.v = toggletouchpad }}, // space
+//    { Mod1Mask|ControlMask,         45,       spawn,          {.v = togglekeyboardlayout }}, // k
+//    { Mod1Mask|ControlMask,         65,       spawn,          {.v = toggletouchpad }}, // space
     /* // ------------------------------------------------------------------ // */
     { 0,                            74,       spawn,          {.v = record }}, // F8
     { 0,                            75,       spawn,          {.v = togglerecord }}, // F9
@@ -175,7 +173,7 @@ const static Key keys[] = {
     { Mod1Mask|ShiftMask,           44,       setsmfact,      {.f = -0.05} }, // j
     { Mod1Mask|ShiftMask,           42,       togglegaps,     {0} }, // g
     { Mod1Mask,                     56,       toggleborders,  {0} }, // b
-	{ Mod1Mask,                     65,       togglescratch,  {.v = scratchpadcmd } }, // space
+    { Mod1Mask,                     65,       togglescratch,  {.v = scratchpadcmd } }, // space
     /* // ------------------------------------------------------------------- // */
     { Mod1Mask,                     23,       view,           {0} }, // Tab
     { Mod1Mask|ShiftMask,           65,       togglefloating, {0} }, // space
@@ -203,14 +201,14 @@ const static Key keys[] = {
     { Mod1Mask|ControlMask,        13, tagall, {.v = "4"} }, //4
     { Mod1Mask|ControlMask,        14, tagall, {.v = "5"} }, //5
     { Mod1Mask|ControlMask,        15, tagall, {.v = "6"} }, //6
-    /* ------------------------------------------------------- */ 
+    /* ------------------------------------------------------- */
 
     // these are 1 through backspace, (top row)
     TAGKEYS(10,0) TAGKEYS(11,1) TAGKEYS(12,2) TAGKEYS(13,3)
     TAGKEYS(14,4) TAGKEYS(15,5) TAGKEYS(16,6)
 
     // -- for 7 through BS to be 7-12
-    TAGKEYS(17,7) TAGKEYS(18, 8) TAGKEYS(19, 9) TAGKEYS(20,10) 
+    TAGKEYS(17,7) TAGKEYS(18, 8) TAGKEYS(19, 9) TAGKEYS(20,10)
     TAGKEYS(21,11) TAGKEYS(22,12)
 
     // -- for 7 through backspace to cycle between 1-6 in reverse:
