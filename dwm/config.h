@@ -3,7 +3,7 @@ static const int start_with_gaps = 1;
 static const int topbar        = 0; /* 0 means bottom bar */
 
 static int BORDER_PX = 0;
-static const int CORNER_RADIUS = 0;
+static const int CORNER_RADIUS = 5;
 static const int BAR_HEIGHT    = 18; // in pixels
 static const int snap = 0;
 /* static const int round_non_floating = 0; */
@@ -19,7 +19,7 @@ static const int warp_mouse = 0;
 /* #include "themes/light-and-black.h" */
 #include "/home/hmps/.cache/wal/colors-wal-dwm.h"
 
-static const char terminal[] = "uxterm";
+static const char terminal[] = "st";
 static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
@@ -85,9 +85,10 @@ static const char *dmenucmd[] = { "dash", "-c", "${HOME}/bin/menu run -p 'Run:'"
 //static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
 static const char *surf[]        = { "qutebrowser", NULL };
 static const char *chrome[]      = { "google-chrome-stable", "--new-window", NULL };
-static const char *term[]        = { "tabbed", "-c", "uxterm", "-into", NULL };
+static const char *term[]        = { "tabbed", "-d", "-c", "-r", "2", "st", "-w", "''", NULL };
 static const char *ranger[]      = { "st", "-e", "ranger", NULL };
-static const char *filechooser[] = { "pcmanfm", NULL };
+static const char *email[]       = { "uxterm", "-e", "neomutt", NULL };
+//static const char *filechooser[] = { "pcmanfm", NULL };
 static const char *clipboard[]   = { "clip", NULL };
 static const char *dedit[]       = { "dedit", NULL };
 static const char *tasks[]       = { "tasks", NULL };
@@ -128,9 +129,7 @@ const static Key keys[] = {
     { Mod1Mask,                     31,             spawn,    {.v = music } }, // i
     { Mod1Mask,                     54,             spawn,    {.v = clipboard } }, // c
     { Mod1Mask,                     27,             spawn,    {.v = ranger } }, // r
-
-    { Mod1Mask,                     26,             spawn,    {.v = filechooser } }, // e
-
+    { Mod1Mask,                     26,             spawn,    {.v = email } }, // e
     { Mod1Mask,                     61,             spawn,    {.v = mediatoggle } }, // /
     { Mod1Mask,                     60,             spawn,    {.v = medianext } },  // >
     { Mod1Mask,                     59,             spawn,    {.v = mediaprev } }, // <
