@@ -24,7 +24,8 @@ static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
 /* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL }; */
-static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "90x26", NULL };
+/* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "90x26", NULL }; */
+static const char *scratchpadcmd[] = { "mksh", "-c", "${HOME}/bin/animuterm", NULL };
 
 static const int NUM_WORKSPACES=10;
 static const char *tags[] = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
