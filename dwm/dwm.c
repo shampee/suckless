@@ -1758,8 +1758,6 @@ void on_start(void) {
     borderpx = BORDER_PX;
     init_dwm_info(gappx, BAR_HEIGHT, topbar, NUM_WORKSPACES);
 
-    system("wal -R");
-    system("compton -b");
     // Note: this is now in ~/.xinitrc
     /* system("/bin/sh ${HOME}/bin/autostart &"); */
 }

@@ -1,0 +1,84 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGBEGIN	arg.h	12;"	d
+ARGC	arg.h	36;"	d
+ARGEND	arg.h	33;"	d
+ARGF	arg.h	44;"	d
+ARG_H__	arg.h	7;"	d
+BINDIR	config.mk	/^BINDIR   = ${PREFIX}\/bin$/;"	m
+CC	config.mk	/^CC = cc$/;"	m
+CFLAGS	config.mk	/^CFLAGS   = -Os ${INCLUDES} -DVERSION=\\"${VERSION}\\" -std=c99 -D_DEFAULT_SOURCE$/;"	m
+Channel	ii.c	/^struct Channel {$/;"	s	file:
+Channel	ii.c	/^typedef struct Channel Channel;$/;"	t	typeref:struct:Channel	file:
+DOCDIR	config.mk	/^DOCDIR   = ${PREFIX}\/share\/doc\/ii$/;"	m
+EARGF	arg.h	38;"	d
+INCLUDES	config.mk	/^INCLUDES = -I. -I\/usr\/include$/;"	m
+IRC_CHANNEL_MAX	ii.c	30;"	d	file:
+IRC_MSG_MAX	ii.c	31;"	d	file:
+LDFLAGS	config.mk	/^LDFLAGS  = -s ${LIBS}$/;"	m
+LIBS	config.mk	/^LIBS     =$/;"	m
+MAN1DIR	config.mk	/^MAN1DIR  = ${MANDIR}\/man1$/;"	m
+MANDIR	config.mk	/^MANDIR   = ${PREFIX}\/share\/man$/;"	m
+OBJ	Makefile	/^OBJ = ${SRC:.c=.o}$/;"	m
+PING_TIMEOUT	ii.c	32;"	d	file:
+PREFIX	config.mk	/^PREFIX   = ${HOME}\/usr\/local$/;"	m
+SRC	Makefile	/^SRC = ii.c strlcpy.c$/;"	m
+TOK_ARG	ii.c	/^enum { TOK_NICKSRV = 0, TOK_USER, TOK_CMD, TOK_CHAN, TOK_ARG, TOK_TEXT, TOK_LAST };$/;"	e	enum:__anon1	file:
+TOK_CHAN	ii.c	/^enum { TOK_NICKSRV = 0, TOK_USER, TOK_CMD, TOK_CHAN, TOK_ARG, TOK_TEXT, TOK_LAST };$/;"	e	enum:__anon1	file:
+TOK_CMD	ii.c	/^enum { TOK_NICKSRV = 0, TOK_USER, TOK_CMD, TOK_CHAN, TOK_ARG, TOK_TEXT, TOK_LAST };$/;"	e	enum:__anon1	file:
+TOK_LAST	ii.c	/^enum { TOK_NICKSRV = 0, TOK_USER, TOK_CMD, TOK_CHAN, TOK_ARG, TOK_TEXT, TOK_LAST };$/;"	e	enum:__anon1	file:
+TOK_NICKSRV	ii.c	/^enum { TOK_NICKSRV = 0, TOK_USER, TOK_CMD, TOK_CHAN, TOK_ARG, TOK_TEXT, TOK_LAST };$/;"	e	enum:__anon1	file:
+TOK_TEXT	ii.c	/^enum { TOK_NICKSRV = 0, TOK_USER, TOK_CMD, TOK_CHAN, TOK_ARG, TOK_TEXT, TOK_LAST };$/;"	e	enum:__anon1	file:
+TOK_USER	ii.c	/^enum { TOK_NICKSRV = 0, TOK_USER, TOK_CMD, TOK_CHAN, TOK_ARG, TOK_TEXT, TOK_LAST };$/;"	e	enum:__anon1	file:
+VERSION	config.mk	/^VERSION = 1.8$/;"	m
+_nick	ii.c	/^static char     _nick[32];         \/* nickname at startup *\/$/;"	v	file:
+argv0	ii.c	/^char *argv0;$/;"	v
+channel_add	ii.c	/^channel_add(const char *name)$/;"	f	file:
+channel_find	ii.c	/^channel_find(const char *name)$/;"	f	file:
+channel_join	ii.c	/^channel_join(const char *name)$/;"	f	file:
+channel_leave	ii.c	/^channel_leave(Channel *c)$/;"	f	file:
+channel_new	ii.c	/^channel_new(const char *name)$/;"	f	file:
+channel_normalize_name	ii.c	/^channel_normalize_name(char *s)$/;"	f	file:
+channel_normalize_path	ii.c	/^channel_normalize_path(char *s)$/;"	f	file:
+channel_open	ii.c	/^channel_open(Channel *c)$/;"	f	file:
+channel_print	ii.c	/^channel_print(Channel *c, const char *buf)$/;"	f	file:
+channel_reopen	ii.c	/^channel_reopen(Channel *c)$/;"	f	file:
+channel_rm	ii.c	/^channel_rm(Channel *c)$/;"	f	file:
+channelmaster	ii.c	/^static Channel *channelmaster = NULL;$/;"	v	file:
+channels	ii.c	/^static Channel *channels = NULL;$/;"	v	file:
+create_dirtree	ii.c	/^create_dirtree(const char *dir)$/;"	f	file:
+create_filepath	ii.c	/^create_filepath(char *filepath, size_t len, const char *path,$/;"	f	file:
+ewritestr	ii.c	/^ewritestr(int fd, const char *s)$/;"	f	file:
+fdin	ii.c	/^	int fdin;$/;"	m	struct:Channel	file:
+handle_channels_input	ii.c	/^handle_channels_input(int ircfd, Channel *c)$/;"	f	file:
+handle_server_output	ii.c	/^handle_server_output(int ircfd)$/;"	f	file:
+inpath	ii.c	/^	char inpath[PATH_MAX];      \/* input path *\/$/;"	m	struct:Channel	file:
+ircpath	ii.c	/^static char     ircpath[PATH_MAX]; \/* irc dir (-i) *\/$/;"	v	file:
+isnumeric	ii.c	/^isnumeric(const char *s)$/;"	f	file:
+isrunning	ii.c	/^static int      isrunning = 1;$/;"	v	file:
+last_response	ii.c	/^static time_t   last_response = 0;$/;"	v	file:
+loginkey	ii.c	/^loginkey(int ircfd, const char *key)$/;"	f	file:
+loginuser	ii.c	/^loginuser(int ircfd, const char *host, const char *fullname)$/;"	f	file:
+main	ii.c	/^main(int argc, char *argv[])$/;"	f
+msg	ii.c	/^static char     msg[IRC_MSG_MAX];  \/* message buf used for communication *\/$/;"	v	file:
+name	ii.c	/^	char name[IRC_CHANNEL_MAX]; \/* channel name (normalized) *\/$/;"	m	struct:Channel	file:
+next	ii.c	/^	Channel *next;$/;"	m	struct:Channel	file:
+nick	ii.c	/^static char     nick[32];          \/* active nickname at runtime *\/$/;"	v	file:
+outpath	ii.c	/^	char outpath[PATH_MAX];     \/* output path *\/$/;"	m	struct:Channel	file:
+proc_channels_input	ii.c	/^proc_channels_input(int ircfd, Channel *c, char *buf)$/;"	f	file:
+proc_channels_privmsg	ii.c	/^proc_channels_privmsg(int ircfd, Channel *c, char *buf)$/;"	f	file:
+proc_server_cmd	ii.c	/^proc_server_cmd(int fd, char *buf)$/;"	f	file:
+read_line	ii.c	/^read_line(int fd, char *buf, size_t bufsiz)$/;"	f	file:
+run	ii.c	/^run(int ircfd, const char *host)$/;"	f	file:
+setup	ii.c	/^setup(void)$/;"	f	file:
+sighandler	ii.c	/^sighandler(int sig)$/;"	f	file:
+strlcpy	ii.c	27;"	d	file:
+strlcpy	strlcpy.c	/^strlcpy(char *dst, const char *src, size_t siz)$/;"	f
+tcpopen	ii.c	/^tcpopen(const char *host, const char *service)$/;"	f	file:
+tokenize	ii.c	/^tokenize(char **result, size_t reslen, char *str, int delim)$/;"	f	file:
+udsopen	ii.c	/^udsopen(const char *uds)$/;"	f	file:
+usage	ii.c	/^usage(void)$/;"	f	file:

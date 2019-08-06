@@ -1,0 +1,302 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGBEGIN	arg.h	7;"	d
+ARGC	arg.h	29;"	d
+ARGEND	arg.h	26;"	d
+ARGF	arg.h	37;"	d
+ARG_H__	arg.h	2;"	d
+Arg	surf.c	/^typedef union { int i; float f; const void *v; } Arg;$/;"	t	typeref:union:__anon4	file:
+AtomFind	surf.c	/^enum { AtomFind, AtomGo, AtomUri, AtomLast };$/;"	e	enum:__anon1	file:
+AtomGo	surf.c	/^enum { AtomFind, AtomGo, AtomUri, AtomLast };$/;"	e	enum:__anon1	file:
+AtomLast	surf.c	/^enum { AtomFind, AtomGo, AtomUri, AtomLast };$/;"	e	enum:__anon1	file:
+AtomUri	surf.c	/^enum { AtomFind, AtomGo, AtomUri, AtomLast };$/;"	e	enum:__anon1	file:
+BM_ADD	config.h	96;"	d
+Button	surf.c	/^} Button;$/;"	t	typeref:struct:__anon7	file:
+CC	config.mk	/^CC = gcc -w -O3 -pipe -std=c99 -fstack-protector-all -fpie$/;"	m
+CLEANMASK	surf.c	14;"	d	file:
+CPPFLAGS	config.mk	/^CPPFLAGS = -DVERSION=\\"${VERSION}\\" -DWEBEXTDIR=\\"${LIBPREFIX}\\" \\$/;"	m
+Client	surf.c	/^typedef struct Client {$/;"	s	file:
+Client	surf.c	/^} Client;$/;"	t	typeref:struct:Client	file:
+DNSPrefetch	surf.c	/^    DNSPrefetch, FontSize,$/;"	e	enum:__anon3	file:
+DOWNLOAD	config.h	77;"	d
+EARGF	arg.h	31;"	d
+FontSize	surf.c	/^    DNSPrefetch, FontSize,$/;"	e	enum:__anon3	file:
+GO_HOME	config.h	103;"	d
+GTKINC	config.mk	/^GTKINC = `pkg-config --cflags gtk+-3.0 gcr-3 webkit2gtk-4.0`$/;"	m
+GTKLIB	config.mk	/^GTKLIB = `pkg-config --libs gtk+-3.0 gcr-3 webkit2gtk-4.0`$/;"	m
+HOMEPAGE	config.h	2;"	d
+INCS	config.mk	/^INCS = -I$(X11INC) $(GTKINC) $/;"	m
+Images	surf.c	/^    Images, Style, WebGL,$/;"	e	enum:__anon3	file:
+JavaScript	surf.c	/^    JavaScript, StrictTLS,$/;"	e	enum:__anon3	file:
+Key	surf.c	/^} Key;$/;"	t	typeref:struct:__anon6	file:
+LENGTH	surf.c	13;"	d	file:
+LIBPREFIX	config.mk	/^LIBPREFIX = $(PREFIX)\/lib\/surf$/;"	m
+LIBS	config.mk	/^LIBS = -L$(X11LIB) -lX11 $(GTKLIB) -lgthread-2.0$/;"	m
+MANPREFIX	config.mk	/^MANPREFIX = $(PREFIX)\/share\/man$/;"	m
+MODKEY	config.h	118;"	d
+OBJ	Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+OnAny	surf.c	/^        OnAny   = OnDoc | OnLink | OnImg | OnMedia | OnEdit | OnBar | OnSel, };$/;"	e	enum:__anon2	file:
+OnBar	surf.c	/^        OnBar   = WEBKIT_HIT_TEST_RESULT_CONTEXT_SCROLLBAR,$/;"	e	enum:__anon2	file:
+OnDoc	surf.c	/^enum {  OnDoc   = WEBKIT_HIT_TEST_RESULT_CONTEXT_DOCUMENT,$/;"	e	enum:__anon2	file:
+OnEdit	surf.c	/^        OnEdit  = WEBKIT_HIT_TEST_RESULT_CONTEXT_EDITABLE,$/;"	e	enum:__anon2	file:
+OnImg	surf.c	/^        OnImg   = WEBKIT_HIT_TEST_RESULT_CONTEXT_IMAGE,$/;"	e	enum:__anon2	file:
+OnLink	surf.c	/^        OnLink  = WEBKIT_HIT_TEST_RESULT_CONTEXT_LINK,$/;"	e	enum:__anon2	file:
+OnMedia	surf.c	/^        OnMedia = WEBKIT_HIT_TEST_RESULT_CONTEXT_MEDIA,$/;"	e	enum:__anon2	file:
+OnSel	surf.c	/^        OnSel   = WEBKIT_HIT_TEST_RESULT_CONTEXT_SELECTION,$/;"	e	enum:__anon2	file:
+PREFIX	config.mk	/^PREFIX = ${HOME}\/usr\/local$/;"	m
+PROMPT_FIND	config.h	71;"	d
+PROMPT_GO	config.h	70;"	d
+ParamName	surf.c	/^} ParamName;$/;"	t	typeref:enum:__anon3	file:
+Parameter	surf.c	/^typedef struct { Arg val; int prio; } Parameter;$/;"	t	typeref:struct:__anon5	file:
+ParameterLast	surf.c	/^    ZoomLevel, ParameterLast$/;"	e	enum:__anon3	file:
+SETPROP	surf-configh-ignore.h	4;"	d
+SETSEARCH	surf-configh-ignore.h	16;"	d
+SH	config.h	114;"	d
+SHIFT	config.h	119;"	d
+SRC	Makefile	/^SRC = surf.c$/;"	m
+SURF_CFLAGS	config.mk	/^SURF_CFLAGS = $(INCS) $(CPPFLAGS) $(CFLAGS)$/;"	m
+SURF_LDFLAGS	config.mk	/^SURF_LDFLAGS = $(LIBS) $(LDFLAGS)$/;"	m
+SearchEngine	surf.c	/^typedef struct { char *token; char *uri; } SearchEngine;$/;"	t	typeref:struct:__anon8	file:
+SiteSpecific	surf.c	/^} SiteSpecific;$/;"	t	typeref:struct:__anon10	file:
+StrictTLS	surf.c	/^    JavaScript, StrictTLS,$/;"	e	enum:__anon3	file:
+Style	surf.c	/^    Images, Style, WebGL,$/;"	e	enum:__anon3	file:
+U+0008	script.js	/^    "U+0008" : "BackSpace",$/;"	p	class:keyId
+U+0009	script.js	/^    "U+0009" : "Tab",$/;"	p	class:keyId
+U+0018	script.js	/^    "U+0018" : "Cancel",$/;"	p	class:keyId
+U+001B	script.js	/^    "U+001B" : "Esc",$/;"	p	class:keyId
+U+0020	script.js	/^    "U+0020" : "Space",$/;"	p	class:keyId
+U+0021	script.js	/^    "U+0021" : "!",$/;"	p	class:keyId
+U+0022	script.js	/^    "U+0022" : "\\"",$/;"	p	class:keyId
+U+0023	script.js	/^    "U+0023" : "#",$/;"	p	class:keyId
+U+0024	script.js	/^    "U+0024" : "$",$/;"	p	class:keyId
+U+0026	script.js	/^    "U+0026" : "&",$/;"	p	class:keyId
+U+0027	script.js	/^    "U+0027" : "'",$/;"	p	class:keyId
+U+0028	script.js	/^    "U+0028" : "(",$/;"	p	class:keyId
+U+0029	script.js	/^    "U+0029" : ")",$/;"	p	class:keyId
+U+002A	script.js	/^    "U+002A" : "*",$/;"	p	class:keyId
+U+002B	script.js	/^    "U+002B" : "+",$/;"	p	class:keyId
+U+002C	script.js	/^    "U+002C" : ",",$/;"	p	class:keyId
+U+002D	script.js	/^    "U+002D" : "-",$/;"	p	class:keyId
+U+002E	script.js	/^    "U+002E" : ".",$/;"	p	class:keyId
+U+002F	script.js	/^    "U+002F" : "\/",$/;"	p	class:keyId
+U+0030	script.js	/^    "U+0030" : "0",$/;"	p	class:keyId
+U+0031	script.js	/^    "U+0031" : "1",$/;"	p	class:keyId
+U+0032	script.js	/^    "U+0032" : "2",$/;"	p	class:keyId
+U+0033	script.js	/^    "U+0033" : "3",$/;"	p	class:keyId
+U+0034	script.js	/^    "U+0034" : "4",$/;"	p	class:keyId
+U+0035	script.js	/^    "U+0035" : "5",$/;"	p	class:keyId
+U+0036	script.js	/^    "U+0036" : "6",$/;"	p	class:keyId
+U+0037	script.js	/^    "U+0037" : "7",$/;"	p	class:keyId
+U+0038	script.js	/^    "U+0038" : "8",$/;"	p	class:keyId
+U+0039	script.js	/^    "U+0039" : "9",$/;"	p	class:keyId
+U+003A	script.js	/^    "U+003A" : ":",$/;"	p	class:keyId
+U+003B	script.js	/^    "U+003B" : ";",$/;"	p	class:keyId
+U+003C	script.js	/^    "U+003C" : "<",$/;"	p	class:keyId
+U+003D	script.js	/^    "U+003D" : "=",$/;"	p	class:keyId
+U+003E	script.js	/^    "U+003E" : ">",$/;"	p	class:keyId
+U+003F	script.js	/^    "U+003F" : "?",$/;"	p	class:keyId
+U+0040	script.js	/^    "U+0040" : "@",$/;"	p	class:keyId
+U+0041	script.js	/^    "U+0041" : "a",$/;"	p	class:keyId
+U+0042	script.js	/^    "U+0042" : "b",$/;"	p	class:keyId
+U+0043	script.js	/^    "U+0043" : "c",$/;"	p	class:keyId
+U+0044	script.js	/^    "U+0044" : "d",$/;"	p	class:keyId
+U+0045	script.js	/^    "U+0045" : "e",$/;"	p	class:keyId
+U+0046	script.js	/^    "U+0046" : "f",$/;"	p	class:keyId
+U+0047	script.js	/^    "U+0047" : "g",$/;"	p	class:keyId
+U+0048	script.js	/^    "U+0048" : "h",$/;"	p	class:keyId
+U+0049	script.js	/^    "U+0049" : "i",$/;"	p	class:keyId
+U+004A	script.js	/^    "U+004A" : "j",$/;"	p	class:keyId
+U+004B	script.js	/^    "U+004B" : "k",$/;"	p	class:keyId
+U+004C	script.js	/^    "U+004C" : "l",$/;"	p	class:keyId
+U+004D	script.js	/^    "U+004D" : "m",$/;"	p	class:keyId
+U+004E	script.js	/^    "U+004E" : "n",$/;"	p	class:keyId
+U+004F	script.js	/^    "U+004F" : "o",$/;"	p	class:keyId
+U+0050	script.js	/^    "U+0050" : "p",$/;"	p	class:keyId
+U+0051	script.js	/^    "U+0051" : "q",$/;"	p	class:keyId
+U+0052	script.js	/^    "U+0052" : "r",$/;"	p	class:keyId
+U+0053	script.js	/^    "U+0053" : "s",$/;"	p	class:keyId
+U+0054	script.js	/^    "U+0054" : "t",$/;"	p	class:keyId
+U+0055	script.js	/^    "U+0055" : "u",$/;"	p	class:keyId
+U+0056	script.js	/^    "U+0056" : "v",$/;"	p	class:keyId
+U+0057	script.js	/^    "U+0057" : "w",$/;"	p	class:keyId
+U+0058	script.js	/^    "U+0058" : "x",$/;"	p	class:keyId
+U+0059	script.js	/^    "U+0059" : "y",$/;"	p	class:keyId
+U+005A	script.js	/^    "U+005A" : "z",$/;"	p	class:keyId
+U+005E	script.js	/^    "U+005E" : "^",$/;"	p	class:keyId
+U+005F	script.js	/^    "U+005F" : "_",$/;"	p	class:keyId
+U+0060	script.js	/^    "U+0060" : "`",$/;"	p	class:keyId
+U+007B	script.js	/^    "U+007B" : "{",$/;"	p	class:keyId
+U+007C	script.js	/^    "U+007C" : "|",$/;"	p	class:keyId
+U+007D	script.js	/^    "U+007D" : "}",$/;"	p	class:keyId
+U+007F	script.js	/^    "U+007F" : "Delete",$/;"	p	class:keyId
+U+00A1	script.js	/^    "U+00A1" : "¡",$/;"	p	class:keyId
+U+00DB	script.js	/^    "U+00DB" : "[",$/;"	p	class:keyId
+U+00DC	script.js	/^    "U+00DC" : "\\\\",$/;"	p	class:keyId
+U+00DD	script.js	/^    "U+00DD" : "]",$/;"	p	class:keyId
+UriParameters	surf.c	/^} UriParameters;$/;"	t	typeref:struct:__anon9	file:
+VERSION	config.mk	/^VERSION = 2.0$/;"	m
+VIDEOPLAY	config.h	90;"	d
+WebGL	surf.c	/^    Images, Style, WebGL,$/;"	e	enum:__anon3	file:
+X11INC	config.mk	/^X11INC = \/usr\/X11R6\/include$/;"	m
+X11LIB	config.mk	/^X11LIB = \/usr\/X11R6\/lib$/;"	m
+YOUTUBEDL	config.h	108;"	d
+ZoomLevel	surf.c	/^    ZoomLevel, ParameterLast$/;"	e	enum:__anon3	file:
+addKeyBind	script.js	/^function addKeyBind( key, func, eve ){$/;"	f
+arg	scripts-surf/surf-translate.py	/^arg = "'" + arg + "'"$/;"	v
+arg	scripts-surf/surf-translate.py	/^arg = arg.replace("$", "")$/;"	v
+arg	scripts-surf/surf-translate.py	/^arg = arg.replace("'", "")$/;"	v
+arg	scripts-surf/surf-translate.py	/^arg = arg.replace("`", "")$/;"	v
+arg	scripts-surf/surf-translate.py	/^arg = arg.replace('"', "")$/;"	v
+arg	scripts-surf/surf-translate.py	/^arg = sys.argv[1]$/;"	v
+arg	surf.c	/^    const Arg arg;$/;"	m	struct:__anon6	file:
+arg	surf.c	/^    const Arg arg;$/;"	m	struct:__anon7	file:
+argv0	surf.c	/^char *argv0;$/;"	v
+atoms	surf.c	/^static Atom atoms[AtomLast];$/;"	v	file:
+buildfile	surf.c	/^char * buildfile(const char *path) {$/;"	f
+buildpath	surf.c	/^char * buildpath(const char *path) {$/;"	f
+button	surf.c	/^    guint button;$/;"	m	struct:__anon7	file:
+buttonreleased	surf.c	/^gboolean buttonreleased(GtkWidget *w, GdkEvent *e, Client *c) {$/;"	f
+buttons	config.h	/^static Button buttons[] = {$/;"	v
+cachedir	config.h	/^static char *cachedir   = "\/home\/hmps\/.cache\/surf";$/;"	v
+cert	surf.c	/^    GTlsCertificate *cert, *failedcert;$/;"	m	struct:Client	file:
+cleanup	surf.c	/^void cleanup(void) {$/;"	f
+clickexternplayer	surf.c	/^void clickexternplayer(Client *c, const Arg *a, WebKitHitTestResult *h) {$/;"	f
+clicknavigate	surf.c	/^void clicknavigate(Client *c, const Arg *a, WebKitHitTestResult *h) {$/;"	f
+clicknewwindow	surf.c	/^void clicknewwindow(Client *c, const Arg *a, WebKitHitTestResult *h) {$/;"	f
+clients	surf.c	/^static Client *clients;$/;"	v	file:
+closeview	surf.c	/^void closeview(WebKitWebView *v, Client *c) {$/;"	f
+config	surf.c	/^    Parameter config[ParameterLast];$/;"	m	struct:__anon9	file:
+cookiefile	config.h	/^static char *cookiefile = "\/home\/hmps\/var\/tmp\/surf-cookies.txt";$/;"	v
+createview	surf.c	/^GtkWidget * createview(WebKitWebView *v, WebKitNavigationAction *a, Client *c) {$/;"	f
+createwindow	surf.c	/^GtkWidget * createwindow(Client *c) {$/;"	f
+crossbones_ascii	config.h	/^char crossbones_ascii[] = "\/home\/hmps\/usr\/bin\/ascii\/crossbones";$/;"	v
+curconfig	surf.c	/^static Parameter *curconfig;$/;"	v	file:
+decidenavigation	surf.c	/^void decidenavigation(WebKitPolicyDecision *d, Client *c) {$/;"	f
+decidenewwindow	surf.c	/^void decidenewwindow(WebKitPolicyDecision *d, Client *c) {$/;"	f
+decidepolicy	surf.c	/^gboolean decidepolicy(WebKitWebView *v, WebKitPolicyDecision *d,$/;"	f
+decideresource	surf.c	/^void decideresource(WebKitPolicyDecision *d, Client *c) {$/;"	f
+defconfig	config.h	/^static Parameter defconfig[ParameterLast] = {$/;"	v
+deleteHintRules	script.js	/^function deleteHintRules() {$/;"	f
+destroyclient	surf.c	/^void destroyclient(Client *c) {$/;"	f
+destroywin	surf.c	/^void destroywin(GtkWidget* w, Client *c) {$/;"	f
+die	surf.c	/^void die(const char *errstr, ...) {$/;"	f
+download	surf.c	/^void download(Client *c, WebKitURIResponse *r) {$/;"	f
+downloadstarted	surf.c	/^void downloadstarted(WebKitWebContext *wc, WebKitDownload *d, Client *c) {$/;"	f
+dpy	surf.c	/^static Display *dpy;$/;"	v	file:
+embed	surf.c	/^static Window embed;$/;"	v	file:
+errorpage	surf.c	/^    int progress, https, insecure, errorpage;$/;"	m	struct:Client	file:
+evalscript	surf.c	/^void evalscript(Client *c, const char *jsstr, ...) {$/;"	f
+execSelect	script.js	/^function execSelect(elem) {$/;"	f
+f	surf.c	/^typedef union { int i; float f; const void *v; } Arg;$/;"	m	union:__anon4	file:
+failedcert	surf.c	/^    GTlsCertificate *cert, *failedcert;$/;"	m	struct:Client	file:
+file	surf.c	/^    char *file;$/;"	m	struct:__anon10	file:
+find	surf.c	/^void find(Client *c, const Arg *a) {$/;"	f
+finder	surf.c	/^    WebKitFindController *finder;$/;"	m	struct:Client	file:
+findopts	surf-configh-ignore.h	/^static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE | WEBKIT_FIND_OPTIONS_WRAP_AROUND;$/;"	v
+fulluseragent	config.h	/^static char *fulluseragent  = "Mozilla\/5.0 (X11; Linux x86_64)";$/;"	v
+func	surf.c	/^    void (*func)(Client *c, const Arg *a);$/;"	m	struct:__anon6	file:
+func	surf.c	/^    void (*func)(Client *c, const Arg *a, WebKitHitTestResult *h);$/;"	m	struct:__anon7	file:
+gdkkb	surf.c	/^static GdkDevice *gdkkb;$/;"	v	file:
+getatom	surf.c	/^const char * getatom(Client *c, int a) {$/;"	f
+getpagestats	surf.c	/^void getpagestats(Client *c) {$/;"	f
+getstyle	surf.c	/^const char * getstyle(const char *uri) {$/;"	f
+geturi	surf.c	/^const char * geturi(Client *c) {$/;"	f
+hintHandler	script.js	/^function hintHandler(e){$/;"	f
+hintMode	script.js	/^function hintMode(){$/;"	f
+hint_elems	script.js	/^var hint_elems = [];$/;"	v
+hint_enabled	script.js	/^var hint_enabled = false;$/;"	v
+hint_num_str	script.js	/^var hint_num_str = '';$/;"	v
+https	surf.c	/^    int progress, https, insecure, errorpage;$/;"	m	struct:Client	file:
+i	surf.c	/^typedef union { int i; float f; const void *v; } Arg;$/;"	m	union:__anon4	file:
+initKeyBind	script.js	/^function initKeyBind(e){$/;"	f
+initwebextensions	surf.c	/^void initwebextensions(WebKitWebContext *wc, Client *c) {$/;"	f
+insecure	surf.c	/^    int progress, https, insecure, errorpage;$/;"	m	struct:Client	file:
+insecurecontent	surf.c	/^void insecurecontent(WebKitWebView *v, WebKitInsecureContentEvent e, Client *c) {$/;"	f
+isHintDisplay	script.js	/^function isHintDisplay(elem) {$/;"	f
+judgeHintNum	script.js	/^function judgeHintNum(hint_num) {$/;"	f
+keys	config.h	/^static const Key keys[] = {$/;"	v
+keyval	surf.c	/^    guint keyval;$/;"	m	struct:__anon6	file:
+loadchanged	surf.c	/^void loadchanged(WebKitWebView *v, WebKitLoadEvent e, Client *c) {$/;"	f
+loadcommitted	surf.c	/^static ParamName loadcommitted[] = {$/;"	v	file:
+loadfailedtls	surf.c	/^gboolean loadfailedtls(WebKitWebView *v, gchar *uri, GTlsCertificate *cert, GTlsCertificateFlags err, Client *c) {$/;"	f
+loadfinished	surf.c	/^static ParamName loadfinished[] = { ParameterLast };$/;"	v	file:
+loadtransient	surf.c	/^static ParamName loadtransient[] = {$/;"	v	file:
+loaduri	surf.c	/^void loaduri(Client *c, const Arg *a) {$/;"	f
+main	surf.c	/^int main(int argc, char *argv[]) {$/;"	f
+mask	surf.c	/^    unsigned int mask;$/;"	m	struct:__anon7	file:
+mod	surf.c	/^    guint mod;$/;"	m	struct:__anon6	file:
+modparams	surf.c	/^static int modparams[ParameterLast];$/;"	v	file:
+mousepos	surf.c	/^    WebKitHitTestResult *mousepos;$/;"	m	struct:Client	file:
+mousetargetchanged	surf.c	/^void mousetargetchanged(WebKitWebView *v, WebKitHitTestResult *h, guint modifiers, Client *c) {$/;"	f
+navigate	surf.c	/^void navigate(Client *c, const Arg *a) {$/;"	f
+needle	surf.c	/^    const char *needle;$/;"	m	struct:Client	file:
+newclient	surf.c	/^Client * newclient(Client *rc) {$/;"	f
+newview	surf.c	/^WebKitWebView * newview(Client *c, WebKitWebView *rv) {$/;"	f
+newwindow	surf.c	/^void newwindow(Client *c, const Arg *a, int noembed) {$/;"	f
+next	surf.c	/^    struct Client *next;$/;"	m	struct:Client	typeref:struct:Client::Client	file:
+on_start	surf.c	/^void on_start() { \/* nop *\/ }$/;"	f
+overtitle	surf.c	/^    const char *title, *overtitle, *targeturi;$/;"	m	struct:Client	file:
+pagestats	surf.c	/^static char pagestats[2];$/;"	v	file:
+parseuri	surf.c	/^gchar * parseuri(const gchar *uri) {$/;"	f
+permissionrequested	surf.c	/^gboolean permissionrequested(WebKitWebView *v, WebKitPermissionRequest *r, Client *c) {$/;"	f
+print	surf.c	/^void print(Client *c, const Arg *a) {$/;"	f
+prio	surf.c	/^typedef struct { Arg val; int prio; } Parameter;$/;"	m	struct:__anon5	file:
+processx	surf.c	/^GdkFilterReturn processx(GdkXEvent *e, GdkEvent *event, gpointer d) {$/;"	f
+progress	surf.c	/^    int progress, https, insecure, errorpage;$/;"	m	struct:Client	file:
+progresschanged	surf.c	/^void progresschanged(WebKitWebView *v, GParamSpec *ps, Client *c) {$/;"	f
+re	surf.c	/^    regex_t re;$/;"	m	struct:__anon10	file:
+re	surf.c	/^    regex_t re;$/;"	m	struct:__anon9	file:
+regex	surf.c	/^    char *regex;$/;"	m	struct:__anon10	file:
+reload	surf.c	/^void reload(Client *c, const Arg *a) {$/;"	f
+removeHints	script.js	/^function removeHints() {$/;"	f
+responsereceived	surf.c	/^void responsereceived(WebKitDownload *d, GParamSpec *ps, Client *c) {$/;"	f
+runscript	surf.c	/^void runscript(Client *c) {$/;"	f
+runtabbed	scripts-surf/surf-open.sh	/^runtabbed() {$/;"	f
+scriptfile	config.h	/^static char *scriptfile = "\/home\/hmps\/etc\/suckless\/surf\/script.js";$/;"	v
+scroll	surf.c	/^void scroll(Client *c, const Arg *a) {$/;"	f
+searchengine	config.h	/^const static char *searchengine = "https:\/\/duckduckgo.com\/html\/?q=";$/;"	v
+searchengines	config.h	/^const static SearchEngine searchengines[] = {$/;"	v
+setHighlight	script.js	/^function setHighlight(elem, is_active) {$/;"	f
+setHintRules	script.js	/^function setHintRules() {$/;"	f
+setHints	script.js	/^function setHints() {$/;"	f
+setatom	surf.c	/^void setatom(Client *c, int a, const char *v) {$/;"	f
+setparameter	surf.c	/^void setparameter(Client *c, int refresh, ParamName p, const Arg *a) {$/;"	f
+setstyle	surf.c	/^void setstyle(Client *c, const char *file) {$/;"	f
+setup	surf.c	/^void setup(void) {$/;"	f
+seturiparameters	surf.c	/^void seturiparameters(Client *c, const char *uri, ParamName *params) {$/;"	f
+showview	surf.c	/^void showview(WebKitWebView *v, Client *c) {$/;"	f
+showxid	surf.c	/^static int showxid;$/;"	v	file:
+sigchld	surf.c	/^void sigchld(int unused) {$/;"	f
+sighup	surf.c	/^void sighup(int unused) {$/;"	f
+spawn	surf.c	/^void spawn(Client *c, const Arg *a) {$/;"	f
+stop	surf.c	/^void stop(Client *c, const Arg *a) {$/;"	f
+stopevent	surf.c	/^    unsigned int stopevent;$/;"	m	struct:__anon7	file:
+styledir	config.h	/^static char *styledir   = "\/home\/hmps\/etc\/suckless\/surf\/styles";$/;"	v
+stylefile	surf.c	/^static char *stylefile;$/;"	v	file:
+styles	config.h	/^static SiteSpecific styles[] = { "ljfadslfksaldflskfd", };$/;"	v
+target	surf.c	/^    unsigned int target;$/;"	m	struct:__anon7	file:
+targeturi	surf.c	/^    const char *title, *overtitle, *targeturi;$/;"	m	struct:Client	file:
+title	surf.c	/^    const char *title, *overtitle, *targeturi;$/;"	m	struct:Client	file:
+titlechanged	surf.c	/^void titlechanged(WebKitWebView *view, GParamSpec *ps, Client *c) {$/;"	f
+tlserr	surf.c	/^    GTlsCertificateFlags tlserr;$/;"	m	struct:Client	file:
+toggle	surf.c	/^void toggle(Client *c, const Arg *a) {$/;"	f
+token	surf.c	/^typedef struct { char *token; char *uri; } SearchEngine;$/;"	m	struct:__anon8	file:
+updatetitle	surf.c	/^void updatetitle(Client *c) {$/;"	f
+updatewinid	surf.c	/^void updatewinid(Client *c) { snprintf(winid, LENGTH(winid), "%lu", c->xid); }$/;"	f
+uri	surf.c	/^    const char *uri;$/;"	m	struct:__anon9	file:
+uri	surf.c	/^typedef struct { char *token; char *uri; } SearchEngine;$/;"	m	struct:__anon8	file:
+uriparams	config.h	/^static UriParameters uriparams[] = {$/;"	v
+useragent	surf.c	/^static const char *useragent;$/;"	v	file:
+v	surf.c	/^typedef union { int i; float f; const void *v; } Arg;$/;"	m	union:__anon4	file:
+val	surf.c	/^typedef struct { Arg val; int prio; } Parameter;$/;"	m	struct:__anon5	file:
+view	surf.c	/^    WebKitWebView *view;$/;"	m	struct:Client	file:
+win	surf.c	/^    GtkWidget *win;$/;"	m	struct:Client	file:
+winevent	surf.c	/^gboolean winevent(GtkWidget *w, GdkEvent *e, Client *c) {$/;"	f
+winid	surf.c	/^static char winid[64];$/;"	v	file:
+winsize	surf-configh-ignore.h	/^static int winsize[] = { 1280, 800 };$/;"	v
+xid	surf.c	/^    Window xid;$/;"	m	struct:Client	file:
+zoom	surf.c	/^void zoom(Client *c, const Arg *a) {$/;"	f

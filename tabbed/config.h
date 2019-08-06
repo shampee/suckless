@@ -14,8 +14,8 @@ static const int WIDTH=500;
 static const int HEIGHT=400;
 
 /* set to -1 if you want to use the text's height */
-/* static const int barheight = 24; */ 
-static const int barheight = -1; 
+/* static const int barheight = 24; */
+static const int barheight = -1;
 
 /* #include "themes/default-theme.h" */
 /* #include "themes/light-orange-theme.h" */
@@ -61,7 +61,7 @@ static const Key keys[] = {
 
     { ControlMask,               XK_Tab,    rotate,      { .i = +1 } },
     { ControlMask|ShiftMask,     XK_Tab,    rotate,      { .i = -1 } },
-    { ShiftMask,                 XK_Tab,    rotate,      { .i = 0 } }, // back-&-forth
+    /* { ShiftMask,                 XK_Tab,    rotate,      { .i = 0 } }, // back-&-forth */
 
     /* ------- moves a tab left or right in stack ---- */
     { ControlMask|ShiftMask,     XK_h,      movetab,     { .i = -1 } },

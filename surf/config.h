@@ -1,9 +1,9 @@
 #include "surf-configh-ignore.h"
-#define HOMEPAGE "file:///home/mitch/usr/startpage/index.html"
+#define HOMEPAGE "file:///home/hmps/usr/startpage/index2.html"
 const static char *searchengine = "https://duckduckgo.com/html/?q=";
 const static SearchEngine searchengines[] = {
     { "d",      "https://duckduckgo.com/html/?q=%s" },
-    { "g",      "https://encrypted.google.com/search?q=%s"   },
+    { "g",      "https://google.se/search?q=%s"   },
     { "git",    "https://github.com/search?utf8=&q=%s&type=" },
     { "ugit",   "https://github.com/%s" },
     { "gist",   "https://gist.github.com/search?q=%s" },
@@ -35,10 +35,10 @@ const static SearchEngine searchengines[] = {
     { "07",   "https://oldschool.runescape.wiki/?search=%s" },
 };
 
-static char *scriptfile = "/home/mitch/etc/suckless/surf/script.js";
-static char *styledir   = "/home/mitch/etc/suckless/surf/styles";
-static char *cachedir   = "/home/mitch/.cache/surf";
-static char *cookiefile = "/home/mitch/var/tmp/surf-cookies.txt";
+static char *scriptfile = "/home/hmps/etc/suckless/surf/script.js";
+static char *styledir   = "/home/hmps/etc/suckless/surf/styles";
+static char *cachedir   = "/home/hmps/.cache/surf";
+static char *cookiefile = "/home/hmps/var/tmp/surf-cookies.txt";
 
 static SiteSpecific styles[] = { "ljfadslfksaldflskfd", };
 
@@ -65,7 +65,7 @@ static UriParameters uriparams[] = {
     /* { "(://|\\.)youtube\\.*(/|$)",        { [DNSPrefetch] = { { .i = 0 }, 0 }, }, }, */
 };
 
-char crossbones_ascii[] = "/home/mitch/usr/bin/ascii/crossbones";
+char crossbones_ascii[] = "/home/hmps/usr/bin/ascii/crossbones";
 
 #define PROMPT_GO   "Go:"
 #define PROMPT_FIND "Find:"
@@ -120,8 +120,7 @@ char crossbones_ascii[] = "/home/mitch/usr/bin/ascii/crossbones";
 static const Key keys[] = {
     { MODKEY,               GDK_KEY_g,       spawn,      SETPROP("_SURF_URI", "_SURF_GO", PROMPT_GO) },
     { MODKEY,               GDK_KEY_slash,   spawn,      SETSEARCH("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
-    { MODKEY,               GDK_KEY_period,  find,       { .i = +1 } },
-    { MODKEY,               GDK_KEY_comma,   find,       { .i = -1 } },
+    { SHIFT,                GDK_KEY_7,       find,       { .i = +1 } },
     { MODKEY,               GDK_KEY_r,       reload,     { .i = 0 } },
     { 0,                    GDK_KEY_F5,      reload,     { .i = 0 } },
     { 0,                    GDK_KEY_Escape,  stop,       { 0 } },

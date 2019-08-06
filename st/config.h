@@ -52,8 +52,8 @@ int borderpx = 22; /* Internal border */
 /* #include "themes/terminaldotsexy/default-color-scheme.h" */
 /*  -------------------------------------------------------  */
 
-unsigned int cols = 80;
-unsigned int rows = 30;
+unsigned int cols = 69;
+unsigned int rows = 22;
 static char shell[] = "/bin/mksh";
 /* static char shell[] = "/bin/ksh"; */
 

@@ -1,0 +1,199 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGBEGIN	arg.h	12;"	d
+ARGC	arg.h	34;"	d
+ARGEND	arg.h	31;"	d
+ARGF	arg.h	42;"	d
+ARG_H__	arg.h	7;"	d
+Arg	tabbed.c	/^} Arg;$/;"	t	typeref:union:__anon3	file:
+BIN	Makefile	/^BIN = ${OBJ:.o=}$/;"	m
+CC	config.mk	/^CC = gcc -w -O3 -pipe -std=c99 -fstack-protector-all -fpie$/;"	m
+CFLAGS	config.mk	/^CFLAGS   = -std=c99 -pedantic -Wall -Os ${INCS} ${CPPFLAGS}$/;"	m
+CLEANMASK	tabbed.c	35;"	d	file:
+CPPFLAGS	config.mk	/^CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\\"${VERSION}\\" ${XINERAMAFLAGS}$/;"	m
+Client	tabbed.c	/^} Client;$/;"	t	typeref:struct:__anon7	file:
+ColBG	tabbed.c	/^enum { ColFG, ColBG, ColLast };       \/* color *\/$/;"	e	enum:__anon1	file:
+ColFG	tabbed.c	/^enum { ColFG, ColBG, ColLast };       \/* color *\/$/;"	e	enum:__anon1	file:
+ColLast	tabbed.c	/^enum { ColFG, ColBG, ColLast };       \/* color *\/$/;"	e	enum:__anon1	file:
+DC	tabbed.c	/^} DC; \/* draw context *\/$/;"	t	typeref:struct:__anon5	file:
+EARGF	arg.h	36;"	d
+FREETYPEINC	config.mk	/^FREETYPEINC = \/usr\/include\/freetype2$/;"	m
+FREETYPELIBS	config.mk	/^FREETYPELIBS = -lfontconfig -lXft$/;"	m
+HEIGHT	config.h	/^static const int HEIGHT=400;$/;"	v
+INCS	config.mk	/^INCS = -I${X11INC} -I${FREETYPEINC}$/;"	m
+Key	tabbed.c	/^} Key;$/;"	t	typeref:struct:__anon4	file:
+LDFLAGS	config.mk	/^LDFLAGS  = -s ${LIBS}$/;"	m
+LENGTH	tabbed.c	34;"	d	file:
+LIBS	config.mk	/^LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} -lm$/;"	m
+MANPREFIX	config.mk	/^MANPREFIX = ${PREFIX}\/share\/man$/;"	m
+MAX	tabbed.c	32;"	d	file:
+MIN	tabbed.c	33;"	d	file:
+OBJ	Makefile	/^OBJ = ${SRC:.c=.o}$/;"	m
+PREFIX	config.mk	/^PREFIX = ${HOME}\/usr\/local$/;"	m
+SETPROP	config.h	43;"	d
+SRC	Makefile	/^SRC = tabbed.c xembed.c$/;"	m
+TEXTW	tabbed.c	36;"	d	file:
+VERSION	config.mk	/^VERSION=4.7$/;"	m
+WIDTH	config.h	/^static const int WIDTH=500;$/;"	v
+WMDelete	tabbed.c	/^enum { WMProtocols, WMDelete, WMName, WMState, WMFullscreen,$/;"	e	enum:__anon2	file:
+WMFullscreen	tabbed.c	/^enum { WMProtocols, WMDelete, WMName, WMState, WMFullscreen,$/;"	e	enum:__anon2	file:
+WMLast	tabbed.c	/^       XEmbed, WMSelectTab, WMLast }; \/* default atoms *\/$/;"	e	enum:__anon2	file:
+WMName	tabbed.c	/^enum { WMProtocols, WMDelete, WMName, WMState, WMFullscreen,$/;"	e	enum:__anon2	file:
+WMProtocols	tabbed.c	/^enum { WMProtocols, WMDelete, WMName, WMState, WMFullscreen,$/;"	e	enum:__anon2	file:
+WMSelectTab	tabbed.c	/^       XEmbed, WMSelectTab, WMLast }; \/* default atoms *\/$/;"	e	enum:__anon2	file:
+WMState	tabbed.c	/^enum { WMProtocols, WMDelete, WMName, WMState, WMFullscreen,$/;"	e	enum:__anon2	file:
+X11INC	config.mk	/^X11INC = \/usr\/X11R6\/include$/;"	m
+X11LIB	config.mk	/^X11LIB = \/usr\/X11R6\/lib$/;"	m
+XEMBED_ACTIVATE_ACCELERATOR	tabbed.c	28;"	d	file:
+XEMBED_EMBEDDED_NOTIFY	tabbed.c	16;"	d	file:
+XEMBED_FOCUS_CURRENT	tabbed.c	29;"	d	file:
+XEMBED_FOCUS_FIRST	tabbed.c	30;"	d	file:
+XEMBED_FOCUS_IN	tabbed.c	20;"	d	file:
+XEMBED_FOCUS_LAST	tabbed.c	31;"	d	file:
+XEMBED_FOCUS_NEXT	tabbed.c	22;"	d	file:
+XEMBED_FOCUS_OUT	tabbed.c	21;"	d	file:
+XEMBED_FOCUS_PREV	tabbed.c	23;"	d	file:
+XEMBED_MODALITY_OFF	tabbed.c	25;"	d	file:
+XEMBED_MODALITY_ON	tabbed.c	24;"	d	file:
+XEMBED_REGISTER_ACCELERATOR	tabbed.c	26;"	d	file:
+XEMBED_REQUEST_FOCUS	tabbed.c	19;"	d	file:
+XEMBED_UNREGISTER_ACCELERATOR	tabbed.c	27;"	d	file:
+XEMBED_WINDOW_ACTIVATE	tabbed.c	17;"	d	file:
+XEMBED_WINDOW_DEACTIVATE	tabbed.c	18;"	d	file:
+XEmbed	tabbed.c	/^       XEmbed, WMSelectTab, WMLast }; \/* default atoms *\/$/;"	e	enum:__anon2	file:
+XINERAMAFLAGS	config.mk	/^XINERAMAFLAGS = -DXINERAMA$/;"	m
+XINERAMALIBS	config.mk	/^XINERAMALIBS  = -lXinerama$/;"	m
+after	config.h	/^static const char after[]       = ">";$/;"	v
+arg	tabbed.c	/^	const Arg arg;$/;"	m	struct:__anon4	file:
+argv0	tabbed.c	/^char *argv0;$/;"	v
+ascent	tabbed.c	/^		int ascent;$/;"	m	struct:__anon5::__anon6	file:
+barheight	config.h	/^static const int barheight = -1;$/;"	v
+before	config.h	/^static const char before[]      = "<";$/;"	v
+bh	tabbed.c	/^static int bh, wx, wy, ww, wh, vbh;$/;"	v	file:
+buttonpress	tabbed.c	/^void buttonpress(const XEvent *e) {$/;"	f
+cleanup	tabbed.c	/^void cleanup(void) {$/;"	f
+clientmessage	tabbed.c	/^void clientmessage(const XEvent *e) {$/;"	f
+clients	tabbed.c	/^static Client **clients;$/;"	v	file:
+closed	tabbed.c	/^	Bool closed;$/;"	m	struct:__anon7	file:
+closelastclient	tabbed.c	/^            fillagain = False, closelastclient = True,$/;"	v	file:
+cmd	tabbed.c	/^static char **cmd;$/;"	v	file:
+cmd_append_pos	tabbed.c	/^static int cmd_append_pos;$/;"	v	file:
+configurenotify	tabbed.c	/^void configurenotify(const XEvent *e) {$/;"	f
+configurerequest	tabbed.c	/^void configurerequest(const XEvent *e) {$/;"	f
+createnotify	tabbed.c	/^void createnotify(const XEvent *e) {$/;"	f
+dc	tabbed.c	/^static DC dc;$/;"	v	file:
+descent	tabbed.c	/^		int descent;$/;"	m	struct:__anon5::__anon6	file:
+destroynotify	tabbed.c	/^void destroynotify(const XEvent *e) {$/;"	f
+die	tabbed.c	/^void die(const char *errstr, ...) {$/;"	f
+doinitspawn	tabbed.c	/^static Bool running = True, nextfocus, doinitspawn = True,$/;"	v	file:
+dpy	tabbed.c	/^static Display *dpy;$/;"	v	file:
+drawable	tabbed.c	/^	Drawable drawable;$/;"	m	struct:__anon5	file:
+drawbar	tabbed.c	/^void drawbar(void) {$/;"	f
+drawtext	tabbed.c	/^void drawtext(const char *text, XftColor col[ColLast]) {$/;"	f
+ecalloc	tabbed.c	/^void * ecalloc(size_t n, size_t size) {$/;"	f
+erealloc	tabbed.c	/^void * erealloc(void *o, size_t size) {$/;"	f
+expose	tabbed.c	/^void expose(const XEvent *e) {$/;"	f
+fillagain	tabbed.c	/^            fillagain = False, closelastclient = True,$/;"	v	file:
+focus	tabbed.c	/^void focus(int c) {$/;"	f
+focusin	tabbed.c	/^void focusin(const XEvent *e) {$/;"	f
+focusonce	tabbed.c	/^void focusonce(const Arg *arg) {$/;"	f
+focusurgent	tabbed.c	/^void focusurgent(const Arg *arg) {$/;"	f
+font	config.h	/^static const char font[]           = "San Francisco Text:pixelsize=16:antialias=true:autohint=true";$/;"	v
+font	tabbed.c	/^	} font;$/;"	m	struct:__anon5	typeref:struct:__anon5::__anon6	file:
+foreground	config.h	/^static const Bool foreground    = False;$/;"	v
+fullscreen	tabbed.c	/^void fullscreen(const Arg *arg) {$/;"	f
+func	tabbed.c	/^	void (*func)(const Arg *);$/;"	m	struct:__anon4	file:
+gc	tabbed.c	/^	GC gc;$/;"	m	struct:__anon5	file:
+geometry	tabbed.c	/^static const char *geometry;$/;"	v	file:
+getatom	tabbed.c	/^char * getatom(int a) {$/;"	f
+getclient	tabbed.c	/^int getclient(Window w) {$/;"	f
+getcolor	tabbed.c	/^XftColor getcolor(const char *colstr) {$/;"	f
+getfirsttab	tabbed.c	/^int getfirsttab(void) {$/;"	f
+gettextprop	tabbed.c	/^Bool gettextprop(Window w, Atom atom, char *text, unsigned int size) {$/;"	f
+h	tabbed.c	/^	int x, y, w, h;$/;"	m	struct:__anon5	file:
+handler	tabbed.c	/^static void (*handler[LASTEvent]) (const XEvent *) = {$/;"	v	file:
+height	tabbed.c	/^		int height;$/;"	m	struct:__anon5::__anon6	file:
+i	tabbed.c	/^	int i;$/;"	m	union:__anon3	file:
+initfont	tabbed.c	/^void initfont(const char *fontstr) {$/;"	f
+isprotodel	tabbed.c	/^Bool isprotodel(int c) {$/;"	f
+keypress	tabbed.c	/^void keypress(const XEvent *e) {$/;"	f
+keys	config.h	/^static const Key keys[] = {$/;"	v
+keysym	tabbed.c	/^	KeySym keysym;$/;"	m	struct:__anon4	file:
+killclient	tabbed.c	/^void killclient(const Arg *arg) {$/;"	f
+killclientsfirst	tabbed.c	/^            killclientsfirst = False;$/;"	v	file:
+lastsel	tabbed.c	/^static int nclients, sel = -1, lastsel = -1;$/;"	v	file:
+main	tabbed.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	xembed.c	/^int main(int argc, char *argv[]) {$/;"	f
+manage	tabbed.c	/^void manage(Window w) {$/;"	f
+maprequest	tabbed.c	/^void maprequest(const XEvent *e) {$/;"	f
+mod	tabbed.c	/^	unsigned int mod;$/;"	m	struct:__anon4	file:
+move	tabbed.c	/^void move(const Arg *arg) {$/;"	f
+movetab	tabbed.c	/^void movetab(const Arg *arg) {$/;"	f
+name	tabbed.c	/^	char name[256];$/;"	m	struct:__anon7	file:
+nclients	tabbed.c	/^static int nclients, sel = -1, lastsel = -1;$/;"	v	file:
+newposition	config.h	/^static int newposition   = 1;$/;"	v
+nextfocus	tabbed.c	/^static Bool running = True, nextfocus, doinitspawn = True,$/;"	v	file:
+norm	tabbed.c	/^	XftColor norm[ColLast];$/;"	m	struct:__anon5	file:
+normbgcolor	themes/default-theme.h	/^static const char* normbgcolor  = "#373B41";$/;"	v
+normbgcolor	themes/light-orange-theme.h	/^static const char* normbgcolor  = "#998d66";$/;"	v
+normfgcolor	themes/default-theme.h	/^static const char* normfgcolor  = "#DCDFDD";$/;"	v
+normfgcolor	themes/light-orange-theme.h	/^static const char* normfgcolor  = "#423F3D";$/;"	v
+npisrelative	config.h	/^static Bool npisrelative  = True;$/;"	v
+numberclients	config.h	/^static const Bool numberclients = False;$/;"	v
+numlockmask	tabbed.c	/^static unsigned int numlockmask;$/;"	v	file:
+propertynotify	tabbed.c	/^void propertynotify(const XEvent *e) {$/;"	f
+resize	tabbed.c	/^void resize(int c, int w, int h) {$/;"	f
+root	tabbed.c	/^static Window root, win;$/;"	v	file:
+rotate	tabbed.c	/^void rotate(const Arg *arg) {$/;"	f
+run	tabbed.c	/^void run(void) {$/;"	f
+running	tabbed.c	/^static Bool running = True, nextfocus, doinitspawn = True,$/;"	v	file:
+screen	tabbed.c	/^static int screen;$/;"	v	file:
+sel	tabbed.c	/^	XftColor sel[ColLast];$/;"	m	struct:__anon5	file:
+sel	tabbed.c	/^static int nclients, sel = -1, lastsel = -1;$/;"	v	file:
+selbgcolor	themes/default-theme.h	/^static const char* selbgcolor   = "#5F819D";$/;"	v
+selbgcolor	themes/light-orange-theme.h	/^static const char* selbgcolor   = "#fcfaf8";$/;"	v
+selfgcolor	themes/default-theme.h	/^static const char* selfgcolor   = "#DCDFDD";$/;"	v
+selfgcolor	themes/light-orange-theme.h	/^static const char* selfgcolor   = "#423F3D";$/;"	v
+sendxembed	tabbed.c	/^void sendxembed(int c, long msg, long detail, long d1, long d2) {$/;"	f
+setcmd	tabbed.c	/^void setcmd(int argc, char *argv[], int replace) {$/;"	f
+setup	tabbed.c	/^void setup(void) {$/;"	f
+sigchld	tabbed.c	/^void sigchld(int unused) {$/;"	f
+spawn	tabbed.c	/^void spawn(const Arg *arg) {$/;"	f
+tabwidth	config.h	/^static const int  tabwidth      = 80;$/;"	v
+tabx	tabbed.c	/^	int tabx;$/;"	m	struct:__anon7	file:
+textnw	tabbed.c	/^int textnw(const char *text, unsigned int len) {$/;"	f
+titletrim	config.h	/^static const char titletrim[]   = "...";$/;"	v
+unmanage	tabbed.c	/^void unmanage(int c) {$/;"	f
+unmapnotify	tabbed.c	/^void unmapnotify(const XEvent *e) {$/;"	f
+updatenumlockmask	tabbed.c	/^void updatenumlockmask(void) {$/;"	f
+updatetitle	tabbed.c	/^void updatetitle(int c) {$/;"	f
+urg	tabbed.c	/^	XftColor urg[ColLast];$/;"	m	struct:__anon5	file:
+urgbgcolor	themes/default-theme.h	/^static const char* urgbgcolor   = "#CC6666";$/;"	v
+urgbgcolor	themes/light-orange-theme.h	/^static const char* urgbgcolor   = "#998866";$/;"	v
+urgent	tabbed.c	/^	Bool urgent;$/;"	m	struct:__anon7	file:
+urgentswitch	config.h	/^static const Bool urgentswitch  = False;$/;"	v
+urgfgcolor	themes/default-theme.h	/^static const char* urgfgcolor   = "#ffffff";$/;"	v
+urgfgcolor	themes/light-orange-theme.h	/^static const char* urgfgcolor   = "#423F3D";$/;"	v
+usage	tabbed.c	/^void usage(void) {$/;"	f
+v	tabbed.c	/^	const void *v;$/;"	m	union:__anon3	file:
+vbh	tabbed.c	/^static int bh, wx, wy, ww, wh, vbh;$/;"	v	file:
+w	tabbed.c	/^	int x, y, w, h;$/;"	m	struct:__anon5	file:
+wh	tabbed.c	/^static int bh, wx, wy, ww, wh, vbh;$/;"	v	file:
+win	tabbed.c	/^	Window win;$/;"	m	struct:__anon7	file:
+win	tabbed.c	/^static Window root, win;$/;"	v	file:
+winid	tabbed.c	/^static char winid[64];$/;"	v	file:
+wmatom	tabbed.c	/^static Atom wmatom[WMLast];$/;"	v	file:
+wmname	tabbed.c	/^static char *wmname = "tabbed";$/;"	v	file:
+ww	tabbed.c	/^static int bh, wx, wy, ww, wh, vbh;$/;"	v	file:
+wx	tabbed.c	/^static int bh, wx, wy, ww, wh, vbh;$/;"	v	file:
+wy	tabbed.c	/^static int bh, wx, wy, ww, wh, vbh;$/;"	v	file:
+x	tabbed.c	/^	int x, y, w, h;$/;"	m	struct:__anon5	file:
+xerror	tabbed.c	/^int xerror(Display *dpy, XErrorEvent *ee) {$/;"	f
+xerrorxlib	tabbed.c	/^static int (*xerrorxlib)(Display *, XErrorEvent *);$/;"	v	file:
+xfont	tabbed.c	/^		XftFont *xfont;$/;"	m	struct:__anon5::__anon6	file:
+xsettitle	tabbed.c	/^void xsettitle(Window w, const char *str) {$/;"	f
+y	tabbed.c	/^	int x, y, w, h;$/;"	m	struct:__anon5	file:

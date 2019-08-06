@@ -1,0 +1,616 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGBEGIN	arg.h	7;"	d
+ARGC	arg.h	29;"	d
+ARGEND	arg.h	26;"	d
+ARGF	arg.h	37;"	d
+ARG_H__	arg.h	2;"	d
+ATTRCMP	st.h	12;"	d
+ATTR_BLINK	st.h	/^	ATTR_BLINK      = 1 << 4,$/;"	e	enum:glyph_attribute
+ATTR_BOLD	st.h	/^	ATTR_BOLD       = 1 << 0,$/;"	e	enum:glyph_attribute
+ATTR_BOLD_FAINT	st.h	/^	ATTR_BOLD_FAINT = ATTR_BOLD | ATTR_FAINT,$/;"	e	enum:glyph_attribute
+ATTR_FAINT	st.h	/^	ATTR_FAINT      = 1 << 1,$/;"	e	enum:glyph_attribute
+ATTR_INVISIBLE	st.h	/^	ATTR_INVISIBLE  = 1 << 6,$/;"	e	enum:glyph_attribute
+ATTR_ITALIC	st.h	/^	ATTR_ITALIC     = 1 << 2,$/;"	e	enum:glyph_attribute
+ATTR_NULL	st.h	/^	ATTR_NULL       = 0,$/;"	e	enum:glyph_attribute
+ATTR_REVERSE	st.h	/^	ATTR_REVERSE    = 1 << 5,$/;"	e	enum:glyph_attribute
+ATTR_STRUCK	st.h	/^	ATTR_STRUCK     = 1 << 7,$/;"	e	enum:glyph_attribute
+ATTR_UNDERLINE	st.h	/^	ATTR_UNDERLINE  = 1 << 3,$/;"	e	enum:glyph_attribute
+ATTR_WDUMMY	st.h	/^	ATTR_WDUMMY     = 1 << 10,$/;"	e	enum:glyph_attribute
+ATTR_WIDE	st.h	/^	ATTR_WIDE       = 1 << 9,$/;"	e	enum:glyph_attribute
+ATTR_WRAP	st.h	/^	ATTR_WRAP       = 1 << 8,$/;"	e	enum:glyph_attribute
+Arg	st.h	/^} Arg;$/;"	t	typeref:union:__anon17
+BETWEEN	st.h	9;"	d
+CC	config.mk	/^CC = gcc -w -O3 -pipe -std=c99 -fstack-protector-all -fpie$/;"	m
+CPPFLAGS	config.mk	/^CPPFLAGS = -DVERSION=\\"$(VERSION)\\" -D_XOPEN_SOURCE=600$/;"	m
+CSIEscape	st.c	/^} CSIEscape;$/;"	t	typeref:struct:__anon1	file:
+CS_FIN	st.c	/^    CS_FIN$/;"	e	enum:charset	file:
+CS_GER	st.c	/^    CS_GER,$/;"	e	enum:charset	file:
+CS_GRAPHIC0	st.c	/^    CS_GRAPHIC0,$/;"	e	enum:charset	file:
+CS_GRAPHIC1	st.c	/^    CS_GRAPHIC1,$/;"	e	enum:charset	file:
+CS_MULTI	st.c	/^    CS_MULTI,$/;"	e	enum:charset	file:
+CS_UK	st.c	/^    CS_UK,$/;"	e	enum:charset	file:
+CS_USA	st.c	/^    CS_USA,$/;"	e	enum:charset	file:
+CURSOR_DEFAULT	st.c	/^    CURSOR_DEFAULT  = 0,$/;"	e	enum:cursor_state	file:
+CURSOR_LOAD	st.c	/^    CURSOR_LOAD$/;"	e	enum:cursor_movement	file:
+CURSOR_ORIGIN	st.c	/^    CURSOR_ORIGIN   = 2$/;"	e	enum:cursor_state	file:
+CURSOR_SAVE	st.c	/^    CURSOR_SAVE,$/;"	e	enum:cursor_movement	file:
+CURSOR_WRAPNEXT	st.c	/^    CURSOR_WRAPNEXT = 1,$/;"	e	enum:cursor_state	file:
+Color	x.c	/^typedef XftColor Color;$/;"	t	file:
+DC	x.c	/^} DC;$/;"	t	typeref:struct:__anon7	file:
+DEFAULT	st.c	55;"	d	file:
+DIVCEIL	st.h	10;"	d
+Draw	x.c	/^typedef XftDraw *Draw;$/;"	t	file:
+EARGF	arg.h	31;"	d
+ESC_ALTCHARSET	st.c	/^    ESC_ALTCHARSET = 8,$/;"	e	enum:escape_state	file:
+ESC_ARG_SIZ	st.c	49;"	d	file:
+ESC_BUF_SIZ	st.c	48;"	d	file:
+ESC_CSI	st.c	/^    ESC_CSI        = 2,$/;"	e	enum:escape_state	file:
+ESC_DCS	st.c	/^    ESC_DCS        =128,$/;"	e	enum:escape_state	file:
+ESC_START	st.c	/^    ESC_START      = 1,$/;"	e	enum:escape_state	file:
+ESC_STR	st.c	/^    ESC_STR        = 4,  \/* OSC, PM, APC *\/$/;"	e	enum:escape_state	file:
+ESC_STR_END	st.c	/^    ESC_STR_END    = 16, \/* a final string was encountered *\/$/;"	e	enum:escape_state	file:
+ESC_TEST	st.c	/^    ESC_TEST       = 32, \/* Enter in test mode *\/$/;"	e	enum:escape_state	file:
+ESC_UTF8	st.c	/^    ESC_UTF8       = 64,$/;"	e	enum:escape_state	file:
+FRC_BOLD	x.c	/^	FRC_BOLD,$/;"	e	enum:__anon8	file:
+FRC_ITALIC	x.c	/^	FRC_ITALIC,$/;"	e	enum:__anon8	file:
+FRC_ITALICBOLD	x.c	/^	FRC_ITALICBOLD$/;"	e	enum:__anon8	file:
+FRC_NORMAL	x.c	/^	FRC_NORMAL,$/;"	e	enum:__anon8	file:
+Font	st.c	33;"	d	file:
+Font	x.c	/^} Font;$/;"	t	typeref:struct:__anon6	file:
+Font	x.c	21;"	d	file:
+Fontcache	x.c	/^} Fontcache;$/;"	t	typeref:struct:__anon9	file:
+Glyph	st.c	32;"	d	file:
+Glyph	st.h	/^} Glyph;$/;"	t	typeref:struct:__anon10
+Glyph	x.c	20;"	d	file:
+GlyphFontSpec	win.h	/^typedef XftGlyphFontSpec GlyphFontSpec;$/;"	t
+HISTSIZE	st.h	3;"	d
+INCS	config.mk	/^INCS = -I$(X11INC) \\$/;"	m
+ISCONTROL	st.c	58;"	d	file:
+ISCONTROLC0	st.c	56;"	d	file:
+ISCONTROLC1	st.c	57;"	d	file:
+ISDELIM	st.c	59;"	d	file:
+ISO14755CMD	st.c	62;"	d	file:
+IS_SET	st.h	14;"	d
+IS_TRUECOL	st.h	20;"	d
+Key	st.c	/^} Key;$/;"	t	typeref:struct:__anon3	file:
+LEN	st.h	8;"	d
+LIBS	config.mk	/^LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \\$/;"	m
+LIMIT	st.h	11;"	d
+Line	st.h	/^typedef Glyph *Line;$/;"	t
+MANPREFIX	config.mk	/^MANPREFIX = $(PREFIX)\/share\/man$/;"	m
+MAX	st.h	7;"	d
+MIN	st.h	6;"	d
+MODBIT	st.h	17;"	d
+MODE_8BIT	st.h	/^	MODE_8BIT        = 1 << 13,$/;"	e	enum:term_mode
+MODE_ALTSCREEN	st.h	/^	MODE_ALTSCREEN   = 1 << 3,$/;"	e	enum:term_mode
+MODE_APPCURSOR	st.h	/^	MODE_APPCURSOR   = 1 << 11,$/;"	e	enum:term_mode
+MODE_APPKEYPAD	st.h	/^	MODE_APPKEYPAD   = 1 << 2,$/;"	e	enum:term_mode
+MODE_BLINK	st.h	/^	MODE_BLINK       = 1 << 14,$/;"	e	enum:term_mode
+MODE_BRCKTPASTE	st.h	/^	MODE_BRCKTPASTE  = 1 << 19,$/;"	e	enum:term_mode
+MODE_CRLF	st.h	/^	MODE_CRLF        = 1 << 4,$/;"	e	enum:term_mode
+MODE_ECHO	st.h	/^	MODE_ECHO        = 1 << 10,$/;"	e	enum:term_mode
+MODE_FBLINK	st.h	/^	MODE_FBLINK      = 1 << 15,$/;"	e	enum:term_mode
+MODE_FOCUS	st.h	/^	MODE_FOCUS       = 1 << 16,$/;"	e	enum:term_mode
+MODE_HIDE	st.h	/^	MODE_HIDE        = 1 << 9,$/;"	e	enum:term_mode
+MODE_INSERT	st.h	/^	MODE_INSERT      = 1 << 1,$/;"	e	enum:term_mode
+MODE_KBDLOCK	st.h	/^	MODE_KBDLOCK     = 1 << 8,$/;"	e	enum:term_mode
+MODE_MOUSE	st.h	/^	MODE_MOUSE       = MODE_MOUSEBTN|MODE_MOUSEMOTION|MODE_MOUSEX10\\$/;"	e	enum:term_mode
+MODE_MOUSEBTN	st.h	/^	MODE_MOUSEBTN    = 1 << 5,$/;"	e	enum:term_mode
+MODE_MOUSEMANY	st.h	/^	MODE_MOUSEMANY   = 1 << 18,$/;"	e	enum:term_mode
+MODE_MOUSEMOTION	st.h	/^	MODE_MOUSEMOTION = 1 << 6,$/;"	e	enum:term_mode
+MODE_MOUSESGR	st.h	/^	MODE_MOUSESGR    = 1 << 12,$/;"	e	enum:term_mode
+MODE_MOUSEX10	st.h	/^	MODE_MOUSEX10    = 1 << 17,$/;"	e	enum:term_mode
+MODE_PRINT	st.h	/^	MODE_PRINT       = 1 << 20,$/;"	e	enum:term_mode
+MODE_REVERSE	st.h	/^	MODE_REVERSE     = 1 << 7,$/;"	e	enum:term_mode
+MODE_SIXEL	st.h	/^	MODE_SIXEL       = 1 << 22,$/;"	e	enum:term_mode
+MODE_UTF8	st.h	/^	MODE_UTF8        = 1 << 21,$/;"	e	enum:term_mode
+MODE_WRAP	st.h	/^	MODE_WRAP        = 1 << 0,$/;"	e	enum:term_mode
+MouseKey	st.h	/^} MouseKey;$/;"	t	typeref:struct:__anon18
+MouseShortcut	st.h	/^} MouseShortcut;$/;"	t	typeref:struct:__anon14
+NUMMAXLEN	st.c	54;"	d	file:
+OBJ	Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+PREFIX	config.mk	/^PREFIX = ${HOME}\/usr\/local$/;"	m
+Rune	st.h	/^typedef uint_least32_t Rune;$/;"	t
+SEL_EMPTY	st.h	/^	SEL_EMPTY = 1,$/;"	e	enum:selection_mode
+SEL_IDLE	st.h	/^	SEL_IDLE = 0,$/;"	e	enum:selection_mode
+SEL_READY	st.h	/^	SEL_READY = 2$/;"	e	enum:selection_mode
+SEL_RECTANGULAR	st.h	/^	SEL_RECTANGULAR = 2$/;"	e	enum:selection_type
+SEL_REGULAR	st.h	/^	SEL_REGULAR = 1,$/;"	e	enum:selection_type
+SNAP_LINE	st.h	/^	SNAP_LINE = 2$/;"	e	enum:selection_snap
+SNAP_WORD	st.h	/^	SNAP_WORD = 1,$/;"	e	enum:selection_snap
+SRC	Makefile	/^SRC = st.c x.c$/;"	m
+STCFLAGS	config.mk	/^STCFLAGS = $(INCS) $(CPPFLAGS) $(CFLAGS)$/;"	m
+STLDFLAGS	config.mk	/^STLDFLAGS = $(LIBS) $(LDFLAGS)$/;"	m
+STREscape	st.c	/^} STREscape;$/;"	t	typeref:struct:__anon2	file:
+STR_ARG_SIZ	st.c	51;"	d	file:
+STR_BUF_SIZ	st.c	50;"	d	file:
+Selection	st.h	/^} Selection;$/;"	t	typeref:struct:__anon15
+Shortcut	st.h	/^} Shortcut;$/;"	t	typeref:struct:__anon19
+TCursor	st.h	/^} TCursor;$/;"	t	typeref:struct:__anon11
+TIMEDIFF	st.h	15;"	d
+TLINE	st.h	22;"	d
+TRUEBLUE	x.c	33;"	d	file:
+TRUECOLOR	st.h	19;"	d
+TRUEGREEN	x.c	32;"	d	file:
+TRUERED	x.c	31;"	d	file:
+Term	st.h	/^} Term;$/;"	t	typeref:struct:__anon12
+TermWindow	st.h	/^} TermWindow;$/;"	t	typeref:struct:__anon13
+UTF_INVALID	st.c	47;"	d	file:
+UTF_SIZ	st.h	2;"	d
+VERSION	config.mk	/^VERSION = 0.8.1$/;"	m
+WIN_FOCUSED	st.h	/^	WIN_FOCUSED = 2$/;"	e	enum:window_state
+WIN_VISIBLE	st.h	/^	WIN_VISIBLE = 1,$/;"	e	enum:window_state
+X11INC	config.mk	/^X11INC = \/usr\/X11R6\/include$/;"	m
+X11LIB	config.mk	/^X11LIB = \/usr\/X11R6\/lib$/;"	m
+XEMBED_FOCUS_IN	x.c	27;"	d	file:
+XEMBED_FOCUS_OUT	x.c	28;"	d	file:
+XK_ANY_MOD	win.h	1;"	d
+XK_NO_MOD	win.h	2;"	d
+XK_SWITCH_MOD	win.h	3;"	d
+XSelection	x.c	/^} XSelection;$/;"	t	typeref:struct:__anon5	file:
+XWindow	x.c	/^} XWindow;$/;"	t	typeref:struct:__anon4	file:
+actionfps	config.h	/^unsigned int actionfps = 30;$/;"	v
+allowaltscreen	st-configh-ignores.h	/^int allowaltscreen = 0;$/;"	v
+alt	st.h	/^	Line *alt;    \/* alternate screen *\/$/;"	m	struct:__anon12
+alt	st.h	/^	int alt;$/;"	m	struct:__anon15
+appcursor	st.c	/^    signed char appcursor; \/* application cursor *\/$/;"	m	struct:__anon3	file:
+appkey	st.c	/^    signed char appkey;    \/* application keypad *\/$/;"	m	struct:__anon3	file:
+arg	st.c	/^    int arg[ESC_ARG_SIZ];$/;"	m	struct:__anon1	file:
+arg	st.h	/^	const Arg arg;$/;"	m	struct:__anon18
+arg	st.h	/^	const Arg arg;$/;"	m	struct:__anon19
+args	st.c	/^    char *args[STR_ARG_SIZ];$/;"	m	struct:__anon2	file:
+argv0	st.c	/^char *argv0;$/;"	v
+ascent	x.c	/^	int ascent;$/;"	m	struct:__anon6	file:
+ascii_printable	st-configh-ignores.h	/^char ascii_printable[] =$/;"	v
+attr	st.h	/^	Glyph attr; \/* current char attributes *\/$/;"	m	struct:__anon11
+attrs	x.c	/^	XSetWindowAttributes attrs;$/;"	m	struct:__anon4	file:
+b	st.h	/^	uint b;$/;"	m	struct:__anon14
+b	st.h	/^	uint b;$/;"	m	struct:__anon18
+badslant	x.c	/^	int badslant;$/;"	m	struct:__anon6	file:
+badweight	x.c	/^	int badweight;$/;"	m	struct:__anon6	file:
+base64_digits	st.c	/^static const char base64_digits[] = {$/;"	v	file:
+base64dec	st.c	/^char * base64dec(const char *src) {$/;"	f
+base64dec_getc	st.c	/^char base64dec_getc(const char **src) {$/;"	f
+bellvolume	st-configh-ignores.h	/^static int bellvolume = 0;$/;"	v
+bfont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon7	file:
+bg	st.h	/^	uint32_t bg;      \/* background  *\/$/;"	m	struct:__anon10
+blinktimeout	st-configh-ignores.h	/^unsigned int blinktimeout = 800;$/;"	v
+bmotion	x.c	/^bmotion(XEvent *e)$/;"	f
+borderpx	config.h	/^int borderpx = 22; \/* Internal border *\/$/;"	v
+bot	st.h	/^	int bot;      \/* bottom scroll limit *\/$/;"	m	struct:__anon12
+bpress	x.c	/^bpress(XEvent *e)$/;"	f
+brelease	x.c	/^void brelease(XEvent *e) {$/;"	f
+buf	st.c	/^    char buf[ESC_BUF_SIZ]; \/* raw string *\/$/;"	m	struct:__anon1	file:
+buf	st.c	/^    char buf[STR_BUF_SIZ]; \/* raw string *\/$/;"	m	struct:__anon2	file:
+buf	x.c	/^	Drawable buf;$/;"	m	struct:__anon4	file:
+c	st.h	/^	TCursor c;    \/* cursor *\/$/;"	m	struct:__anon12
+ch	st.h	/^	int ch; \/* char height *\/$/;"	m	struct:__anon13
+charset	st.c	/^enum charset {$/;"	g	file:
+charset	st.h	/^	int charset;  \/* current charset *\/$/;"	m	struct:__anon12
+chscale	config.h	/^float chscale = 1.0; \/\/ bounding box$/;"	v
+clipboard	st.h	/^	char *primary, *clipboard;$/;"	m	struct:__anon15
+clipcopy	st.c	/^void clipcopy(const Arg *dummy) {$/;"	f
+clippaste	st.c	/^void clippaste(const Arg *dummy) {$/;"	f
+cmap	x.c	/^	Colormap cmap;$/;"	m	struct:__anon4	file:
+cmdfd	st.c	/^int cmdfd;$/;"	v
+cmessage	x.c	/^cmessage(XEvent *e)$/;"	f
+col	st.h	/^	int col;      \/* nb col *\/$/;"	m	struct:__anon12
+col	x.c	/^	Color *col;$/;"	m	struct:__anon7	file:
+collen	x.c	/^	size_t collen;$/;"	m	struct:__anon7	file:
+colorname	themes/default-color-scheme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/light-orange-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/mine/bubblegum-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/other/sourcerer-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/ashes-dark-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/ashes-light-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/dawn-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/estuary-light-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/estuary-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/grayscale-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/gruvbox-light-hard-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/hund-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/insignificato-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/light-monocrome-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/mocha-dark-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/mocha-light-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/mostly-bright-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/nature-suede-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/navy-and-ivory-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/ocean-dark-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/plateau-light-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/praiso-dark-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/tomorrow-dark-theme.h	/^ const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/unsifted-wheat-theme.h	/^const char *colorname[] = {$/;"	v
+colorname	themes/terminaldotsexy/visibone-theme.h	/^ const char *colorname[] = {$/;"	v
+colornamelen	st.c	/^size_t colornamelen = LEN(colorname);$/;"	v
+cols	config.h	/^unsigned int cols = 69;$/;"	v
+copyurl	st.c	/^copyurl(const Arg *arg) {$/;"	f
+cresize	st.c	/^cresize(int width, int height) {$/;"	f
+crlf	st.c	/^    signed char crlf;      \/* crlf mode          *\/$/;"	m	struct:__anon3	file:
+csidump	st.c	/^csidump(void)$/;"	f
+csiescseq	st.c	/^static CSIEscape csiescseq;$/;"	v	file:
+csihandle	st.c	/^void csihandle(void) {$/;"	f
+csiparse	st.c	/^void csiparse(void) {$/;"	f
+csireset	st.c	/^void csireset(void) {$/;"	f
+cursor	st.h	/^	int cursor; \/* cursor style *\/$/;"	m	struct:__anon13
+cursor_movement	st.c	/^enum cursor_movement {$/;"	g	file:
+cursor_state	st.c	/^enum cursor_state {$/;"	g	file:
+cursorshape	st-configh-ignores.h	/^unsigned int cursorshape = 2;$/;"	v
+cursorthickness	st-configh-ignores.h	/^unsigned int cursorthickness = 1;$/;"	v
+cw	st.h	/^	int cw; \/* char width  *\/$/;"	m	struct:__anon13
+cwscale	config.h	/^float cwscale = 1.0; \/\/ kerning$/;"	v
+cyo	st.h	/^	int cyo; \/* char y offset *\/$/;"	m	struct:__anon13
+dc	x.c	/^static DC dc;$/;"	v	file:
+defaultattr	st-configh-ignores.h	/^unsigned int defaultattr = 11;$/;"	v
+defaultbg	themes/default-color-scheme.h	/^unsigned int defaultbg = 0;$/;"	v
+defaultbg	themes/light-orange-theme.h	/^ unsigned int defaultbg = 0;$/;"	v
+defaultbg	themes/mine/bubblegum-theme.h	/^ unsigned int defaultbg = 0;$/;"	v
+defaultbg	themes/other/sourcerer-theme.h	/^ unsigned int defaultbg = 0;$/;"	v
+defaultbg	themes/terminaldotsexy/ashes-dark-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/ashes-light-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/dawn-theme.h	/^unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/estuary-light-theme.h	/^unsigned int defaultbg = 8;$/;"	v
+defaultbg	themes/terminaldotsexy/estuary-theme.h	/^unsigned int defaultbg = 8;$/;"	v
+defaultbg	themes/terminaldotsexy/grayscale-theme.h	/^unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/gruvbox-light-hard-theme.h	/^unsigned int defaultbg = 8;$/;"	v
+defaultbg	themes/terminaldotsexy/hund-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/insignificato-theme.h	/^unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/light-monocrome-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/mocha-dark-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/mocha-light-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/mostly-bright-theme.h	/^unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/nature-suede-theme.h	/^unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/navy-and-ivory-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/ocean-dark-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/plateau-light-theme.h	/^unsigned int defaultbg = 8;$/;"	v
+defaultbg	themes/terminaldotsexy/praiso-dark-theme.h	/^unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/tomorrow-dark-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/unsifted-wheat-theme.h	/^unsigned int defaultbg = 256;$/;"	v
+defaultbg	themes/terminaldotsexy/visibone-theme.h	/^ unsigned int defaultbg = 256;$/;"	v
+defaultcs	themes/default-color-scheme.h	/^unsigned int defaultcs = 256;$/;"	v
+defaultcs	themes/light-orange-theme.h	/^ unsigned int defaultcs = 258;$/;"	v
+defaultcs	themes/mine/bubblegum-theme.h	/^ unsigned int defaultcs = 258;$/;"	v
+defaultcs	themes/other/sourcerer-theme.h	/^ unsigned int defaultcs = 258;$/;"	v
+defaultcs	themes/terminaldotsexy/ashes-dark-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/ashes-light-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/dawn-theme.h	/^unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/estuary-light-theme.h	/^unsigned int defaultcs = 14;$/;"	v
+defaultcs	themes/terminaldotsexy/estuary-theme.h	/^unsigned int defaultcs = 14;$/;"	v
+defaultcs	themes/terminaldotsexy/grayscale-theme.h	/^unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/gruvbox-light-hard-theme.h	/^unsigned int defaultcs = 14;$/;"	v
+defaultcs	themes/terminaldotsexy/hund-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/insignificato-theme.h	/^unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/light-monocrome-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/mocha-dark-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/mocha-light-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/mostly-bright-theme.h	/^unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/nature-suede-theme.h	/^unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/navy-and-ivory-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/ocean-dark-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/plateau-light-theme.h	/^unsigned int defaultcs = 14;$/;"	v
+defaultcs	themes/terminaldotsexy/praiso-dark-theme.h	/^unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/tomorrow-dark-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/unsifted-wheat-theme.h	/^unsigned int defaultcs = 257;$/;"	v
+defaultcs	themes/terminaldotsexy/visibone-theme.h	/^ unsigned int defaultcs = 257;$/;"	v
+defaultfg	themes/default-color-scheme.h	/^unsigned int defaultfg = 7;$/;"	v
+defaultfg	themes/light-orange-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/mine/bubblegum-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/other/sourcerer-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/ashes-dark-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/ashes-light-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/dawn-theme.h	/^unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/estuary-light-theme.h	/^unsigned int defaultfg = 12;$/;"	v
+defaultfg	themes/terminaldotsexy/estuary-theme.h	/^unsigned int defaultfg = 12;$/;"	v
+defaultfg	themes/terminaldotsexy/grayscale-theme.h	/^unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/gruvbox-light-hard-theme.h	/^unsigned int defaultfg = 12;$/;"	v
+defaultfg	themes/terminaldotsexy/hund-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/insignificato-theme.h	/^unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/light-monocrome-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/mocha-dark-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/mocha-light-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/mostly-bright-theme.h	/^unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/nature-suede-theme.h	/^unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/navy-and-ivory-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/ocean-dark-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/plateau-light-theme.h	/^unsigned int defaultfg = 12;$/;"	v
+defaultfg	themes/terminaldotsexy/praiso-dark-theme.h	/^unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/tomorrow-dark-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/unsifted-wheat-theme.h	/^unsigned int defaultfg = 257;$/;"	v
+defaultfg	themes/terminaldotsexy/visibone-theme.h	/^ unsigned int defaultfg = 257;$/;"	v
+defaultfontsize	st.c	/^double defaultfontsize = 0;$/;"	v
+descent	x.c	/^	int descent;$/;"	m	struct:__anon6	file:
+die	st.c	/^void die(const char *errstr, ...) {$/;"	f
+dirty	st.h	/^	int *dirty;  \/* dirtyness of lines *\/$/;"	m	struct:__anon12
+disablebold	st-configh-ignores.h	/^int disablebold = 0;$/;"	v
+disableitalic	st-configh-ignores.h	/^int disableitalic = 0;$/;"	v
+disableroman	st-configh-ignores.h	/^int disableroman = 0;$/;"	v
+doubleclicktimeout	st-configh-ignores.h	/^unsigned int doubleclicktimeout = 300;$/;"	v
+dpy	x.c	/^	Display *dpy;$/;"	m	struct:__anon4	file:
+draw	x.c	/^	Draw draw;$/;"	m	struct:__anon4	file:
+draw	x.c	/^void draw(void) {$/;"	f
+drawregion	x.c	/^void drawregion(int x1, int y1, int x2, int y2) {$/;"	f
+esc	st.h	/^	int esc;      \/* escape state flags *\/$/;"	m	struct:__anon12
+escape_state	st.c	/^enum escape_state {$/;"	g	file:
+eschandle	st.c	/^int eschandle(uchar ascii) {$/;"	f
+execsh	st.c	/^void execsh(void) {$/;"	f
+expose	x.c	/^expose(XEvent *ev)$/;"	f
+externalpipe	st.c	/^void externalpipe(const Arg *arg) {$/;"	f
+f	st.h	/^	float f;$/;"	m	union:__anon17
+fg	st.h	/^	uint32_t fg;      \/* foreground  *\/$/;"	m	struct:__anon10
+flags	x.c	/^	int flags;$/;"	m	struct:__anon9	file:
+focus	x.c	/^focus(XEvent *ev)$/;"	f
+font	config.h	/^char font[] = "SFMono:pixelsize=14:antialias=true:autohint=true";$/;"	v
+font	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon7	file:
+font	x.c	/^	XftFont *font;$/;"	m	struct:__anon9	file:
+forceselmod	st-configh-ignores.h	/^uint forceselmod = ShiftMask;$/;"	v
+frc	x.c	/^static Fontcache frc[16];$/;"	v	file:
+frclen	x.c	/^static int frclen = 0;$/;"	v	file:
+func	st.h	/^	void (*func)(const Arg *);$/;"	m	struct:__anon18
+func	st.h	/^	void (*func)(const Arg *);$/;"	m	struct:__anon19
+gc	x.c	/^	GC gc;$/;"	m	struct:__anon7	file:
+getbuttoninfo	x.c	/^void getbuttoninfo(XEvent *e) {$/;"	f
+getsel	st.c	/^char * getsel(void) {$/;"	f
+glyph_attribute	st.h	/^enum glyph_attribute {$/;"	g
+gm	x.c	/^	int gm; \/* geometry mask *\/$/;"	m	struct:__anon4	file:
+h	st.h	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon13
+handler	x.c	/^static void (*handler[LASTEvent])(XEvent *) = {$/;"	v	file:
+height	x.c	/^	int height;$/;"	m	struct:__anon6	file:
+hist	st.h	/^	Line hist[HISTSIZE]; \/* history buffer *\/$/;"	m	struct:__anon12
+histi	st.h	/^	int histi;    \/* history index *\/$/;"	m	struct:__anon12
+i	st.h	/^	int i;$/;"	m	union:__anon17
+ibfont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon7	file:
+icharset	st.h	/^	int icharset; \/* selected charset for sequence *\/$/;"	m	struct:__anon12
+ifont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon7	file:
+ignoremod	st-configh-ignores.h	/^static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;$/;"	v
+iofd	st.c	/^static int iofd = 1;$/;"	v	file:
+isfixed	x.c	/^	int isfixed; \/* is fixed geometry? *\/$/;"	m	struct:__anon4	file:
+iso14755	st.c	/^void iso14755(const Arg *arg) {$/;"	f
+k	st.c	/^    KeySym k;$/;"	m	struct:__anon3	file:
+key	st-configh-ignores.h	/^static Key key[] = {$/;"	v
+keysym	st.h	/^	KeySym keysym;$/;"	m	struct:__anon19
+kmap	st.c	/^char* kmap(KeySym k, uint state) {$/;"	f
+kpress	x.c	/^kpress(XEvent *ev)$/;"	f
+kscrolldown	st.c	/^void kscrolldown(const Arg* a) {$/;"	f
+kscrollup	st.c	/^void kscrollup(const Arg* a) {$/;"	f
+l	x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon4	file:
+lbearing	x.c	/^	short lbearing;$/;"	m	struct:__anon6	file:
+len	st.c	/^    int len;               \/* raw string length *\/$/;"	m	struct:__anon1	file:
+len	st.c	/^    int len;               \/* raw string length *\/$/;"	m	struct:__anon2	file:
+line	st.h	/^	Line *line;   \/* screen *\/$/;"	m	struct:__anon12
+main	x.c	/^int main(int argc, char *argv[]) {$/;"	f
+mappedkeys	st-configh-ignores.h	/^static KeySym mappedkeys[] = { -1 };$/;"	v
+mask	st.c	/^    uint mask;$/;"	m	struct:__anon3	file:
+mask	st.h	/^	uint mask;$/;"	m	struct:__anon14
+mask	st.h	/^	uint mask;$/;"	m	struct:__anon18
+match	st.c	/^int match(uint mask, uint state) {$/;"	f
+match	x.c	/^	XftFont *match;$/;"	m	struct:__anon6	file:
+mkeys	config.h	/^MouseKey mkeys[] = {$/;"	v
+mkeyslen	st.c	/^size_t mkeyslen = LEN(mkeys);$/;"	v
+mod	st.h	/^	uint mod;$/;"	m	struct:__anon19
+mode	st.c	/^    char mode[2];$/;"	m	struct:__anon1	file:
+mode	st.h	/^	int mode;     \/* terminal mode flags *\/$/;"	m	struct:__anon12
+mode	st.h	/^	int mode;$/;"	m	struct:__anon15
+mode	st.h	/^	ushort mode;      \/* attribute flags *\/$/;"	m	struct:__anon10
+mousebg	st-configh-ignores.h	/^unsigned int mousebg = 0;$/;"	v
+mousefg	st-configh-ignores.h	/^unsigned int mousefg = 7;$/;"	v
+mousereport	x.c	/^mousereport(XEvent *e)$/;"	f
+mouseshape	st-configh-ignores.h	/^unsigned int mouseshape = XC_xterm;$/;"	v
+mshortcuts	st-configh-ignores.h	/^MouseShortcut mshortcuts[] = {$/;"	v
+mshortcutslen	st.c	/^size_t mshortcutslen = LEN(mshortcuts);$/;"	v
+narg	st.c	/^    int narg;              \/* nb of args *\/$/;"	m	struct:__anon1	file:
+narg	st.c	/^    int narg;              \/* nb of args *\/$/;"	m	struct:__anon2	file:
+nb	st.h	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon15	typeref:struct:__anon15::__anon16
+ne	st.h	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon15	typeref:struct:__anon15::__anon16
+netwmname	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon4	file:
+netwmpid	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon4	file:
+numlock	st.c	/^void numlock(const Arg *dummy) { term.numlock ^= 1; }$/;"	f
+numlock	st.h	/^	int numlock; \/* lock numbers in keyboard *\/$/;"	m	struct:__anon12
+ob	st.h	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon15	typeref:struct:__anon15::__anon16
+oe	st.h	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon15	typeref:struct:__anon15::__anon16
+oldbutton	st.c	/^int oldbutton   = 3; \/* button event on startup: 3 = release *\/$/;"	v
+opt_class	st.c	/^char *opt_class = NULL;$/;"	v
+opt_cmd	st.c	/^char **opt_cmd  = NULL;$/;"	v
+opt_embed	st.c	/^char *opt_embed = NULL;$/;"	v
+opt_font	st.c	/^char *opt_font  = NULL;$/;"	v
+opt_io	st.c	/^char *opt_io    = NULL;$/;"	v
+opt_line	st.c	/^char *opt_line  = NULL;$/;"	v
+opt_name	st.c	/^char *opt_name  = NULL;$/;"	v
+opt_title	st.c	/^char *opt_title = NULL;$/;"	v
+pattern	x.c	/^	FcPattern *pattern;$/;"	m	struct:__anon6	file:
+pid	st.c	/^pid_t pid;$/;"	v
+plumb	config.h	/^void plumb()   { system("\/bin\/dash ${HOME}\/usr\/bin\/plumb 2>> \/tmp\/plumb_errors.txt &"); }$/;"	f
+primary	st.h	/^	char *primary, *clipboard;$/;"	m	struct:__anon15
+print_heart	st-configh-ignores.h	/^void print_heart(){ system(" \\$/;"	f
+printscreen	st.c	/^void printscreen(const Arg *arg) {$/;"	f
+printsel	st.c	/^void printsel(const Arg *arg) {$/;"	f
+priv	st.c	/^    char priv;$/;"	m	struct:__anon1	file:
+propnotify	x.c	/^propnotify(XEvent *e)$/;"	f
+rbearing	x.c	/^	short rbearing;$/;"	m	struct:__anon6	file:
+redraw	st.c	/^void redraw(void) {$/;"	f
+resettitle	st.c	/^void resettitle(void) {$/;"	f
+resize	x.c	/^resize(XEvent *e)$/;"	f
+row	st.h	/^	int row;      \/* nb row *\/$/;"	m	struct:__anon12
+rows	config.h	/^unsigned int rows = 22;$/;"	v
+run	x.c	/^run(void)$/;"	f
+s	st.c	/^    char *s;$/;"	m	struct:__anon3	file:
+s	st.h	/^	char *s;$/;"	m	struct:__anon14
+scr	st.h	/^	int scr;      \/* scroll back *\/$/;"	m	struct:__anon12
+scr	x.c	/^	int scr;$/;"	m	struct:__anon4	file:
+sel	st.c	/^Selection sel;$/;"	v
+selclear	st.c	/^void selclear(void) {$/;"	f
+selclear_	x.c	/^void selclear_(XEvent *e) {$/;"	f
+selcopy	x.c	/^selcopy(Time t)$/;"	f
+selected	st.c	/^int selected(int x, int y) {$/;"	f
+selection_mode	st.h	/^enum selection_mode {$/;"	g
+selection_snap	st.h	/^enum selection_snap {$/;"	g
+selection_type	st.h	/^enum selection_type {$/;"	g
+selinit	st.c	/^void selinit(void) {$/;"	f
+selmasks	st-configh-ignores.h	/^uint selmasks[] = {$/;"	v
+selmaskslen	st.c	/^size_t selmaskslen = LEN(selmasks);$/;"	v
+selnormalize	st.c	/^void selnormalize(void) {$/;"	f
+selnotify	x.c	/^selnotify(XEvent *e)$/;"	f
+selpaste	st.c	/^void selpaste(const Arg *dummy) {$/;"	f
+selrequest	x.c	/^void selrequest(XEvent *e) {$/;"	f
+selscroll	st.c	/^void selscroll(int orig, int n) {$/;"	f
+selsnap	st.c	/^void selsnap(int *x, int *y, int direction) { int newx, newy, xt, yt;$/;"	f
+sendbreak	st.c	/^void sendbreak(const Arg *arg) {$/;"	f
+set	x.c	/^	FcFontSet *set;$/;"	m	struct:__anon6	file:
+shell	config.h	/^static char shell[] = "\/bin\/mksh";$/;"	v
+shortcuts	config.h	/^Shortcut shortcuts[] = {$/;"	v
+shortcutslen	st.c	/^size_t shortcutslen = LEN(shortcuts);$/;"	v
+sigchld	st.c	/^void sigchld(int a) {$/;"	f
+sixd_to_16bit	x.c	/^ushort sixd_to_16bit(int x) {$/;"	f
+snap	st.h	/^	int snap;$/;"	m	struct:__anon15
+specbuf	st.h	/^	GlyphFontSpec *specbuf; \/* font spec buffer used for rendering *\/$/;"	m	struct:__anon12
+state	st.h	/^	char state; \/* focus, redraw, visible *\/$/;"	m	struct:__anon13
+state	st.h	/^	char state;$/;"	m	struct:__anon11
+strdump	st.c	/^void strdump(void) {$/;"	f
+strescseq	st.c	/^static STREscape strescseq;$/;"	v	file:
+strhandle	st.c	/^void strhandle(void) {$/;"	f
+strparse	st.c	/^strparse(void)$/;"	f
+strreset	st.c	/^void strreset(void) {$/;"	f
+stty	st.c	/^void stty(void) {$/;"	f
+stty_args	st-configh-ignores.h	/^static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";$/;"	v
+t	x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon4	file:
+tabs	st.h	/^	int *tabs;$/;"	m	struct:__anon12
+tabspaces	config.h	/^static const unsigned int tabspaces = 4;$/;"	v
+tattrset	st.c	/^int tattrset(int attr) {$/;"	f
+tclearregion	st.c	/^void tclearregion(int x1, int y1, int x2, int y2) {$/;"	f
+tclick1	st.h	/^	struct timespec tclick1;$/;"	m	struct:__anon15	typeref:struct:__anon15::timespec
+tclick2	st.h	/^	struct timespec tclick2;$/;"	m	struct:__anon15	typeref:struct:__anon15::timespec
+tcontrolcode	st.c	/^void tcontrolcode(uchar ascii) {$/;"	f
+tcursor	st.c	/^void tcursor(int mode) {$/;"	f
+tdectest	st.c	/^void tdectest(char c) {$/;"	f
+tdefcolor	st.c	/^int32_t tdefcolor(int *attr, int *npar, int l) {$/;"	f
+tdeftran	st.c	/^void tdeftran(char ascii) {$/;"	f
+tdefutf8	st.c	/^void tdefutf8(char ascii) {$/;"	f
+tdeletechar	st.c	/^tdeletechar(int n)$/;"	f
+tdeleteline	st.c	/^void tdeleteline(int n) {$/;"	f
+tdump	st.c	/^tdump(void)$/;"	f
+tdumpline	st.c	/^void tdumpline(int n) {$/;"	f
+tdumpsel	st.c	/^void tdumpsel(void) {$/;"	f
+techo	st.c	/^techo(Rune u)$/;"	f
+term	st.c	/^Term term;$/;"	v
+term_mode	st.h	/^enum term_mode {$/;"	g
+termname	st-configh-ignores.h	/^char termname[] = "st-256color";$/;"	v
+tfulldirt	st.c	/^void tfulldirt(void) {$/;"	f
+th	st.h	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon13
+tinsertblank	st.c	/^void tinsertblank(int n) {$/;"	f
+tinsertblankline	st.c	/^void tinsertblankline(int n) {$/;"	f
+tlinelen	st.c	/^int tlinelen(int y) {$/;"	f
+tmoveato	st.c	/^void tmoveato(int x, int y) {$/;"	f
+tmoveto	st.c	/^void tmoveto(int x, int y) {$/;"	f
+tnew	st.c	/^void tnew(int col, int row) {$/;"	f
+tnewline	st.c	/^void tnewline(int first_col) {$/;"	f
+toggleprinter	st.c	/^void toggleprinter(const Arg *arg) {$/;"	f
+top	st.h	/^	int top;      \/* top    scroll limit *\/$/;"	m	struct:__anon12
+tprinter	st.c	/^void tprinter(char *s, size_t len) {$/;"	f
+tputc	st.c	/^void tputc(Rune u) {$/;"	f
+tputtab	st.c	/^tputtab(int n)$/;"	f
+trantbl	st.h	/^	char trantbl[4]; \/* charset table translation *\/$/;"	m	struct:__anon12
+treset	st.c	/^void treset(void) {$/;"	f
+tresize	st.c	/^void tresize(int col, int row) {$/;"	f
+tripleclicktimeout	st-configh-ignores.h	/^unsigned int tripleclicktimeout = 600;$/;"	v
+tscrolldown	st.c	/^void tscrolldown(int orig, int n, int copyhist) {$/;"	f
+tscrollup	st.c	/^void tscrollup(int orig, int n, int copyhist) {$/;"	f
+tsetattr	st.c	/^void tsetattr(int *attr, int l) {$/;"	f
+tsetchar	st.c	/^tsetchar(Rune u, Glyph *attr, int x, int y)$/;"	f
+tsetdirt	st.c	/^void tsetdirt(int top, int bot) {$/;"	f
+tsetdirtattr	st.c	/^void tsetdirtattr(int attr) {$/;"	f
+tsetmode	st.c	/^void tsetmode(int priv, int set, int *args, int narg) {$/;"	f
+tsetscroll	st.c	/^void tsetscroll(int t, int b) {$/;"	f
+tstrsequence	st.c	/^tstrsequence(uchar c)$/;"	f
+tswapscreen	st.c	/^void tswapscreen(void) {$/;"	f
+ttynew	st.c	/^void ttynew(void) {$/;"	f
+ttyread	st.c	/^ttyread(void)$/;"	f
+ttyresize	st.c	/^void ttyresize(void) {$/;"	f
+ttysend	st.c	/^void ttysend(char *s, size_t n) {$/;"	f
+ttywrite	st.c	/^ttywrite(const char *s, size_t n)$/;"	f
+tw	st.h	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon13
+type	st.c	/^    char type;             \/* ESC type ... *\/$/;"	m	struct:__anon2	file:
+type	st.h	/^	int type;$/;"	m	struct:__anon15
+u	st.h	/^	Rune u;           \/* character code *\/$/;"	m	struct:__anon10
+uchar	st.h	/^typedef unsigned char uchar;$/;"	t
+ui	st.h	/^	uint ui;$/;"	m	union:__anon17
+uint	st.h	/^typedef unsigned int uint;$/;"	t
+ulong	st.h	/^typedef unsigned long ulong;$/;"	t
+unicodep	x.c	/^	Rune unicodep;$/;"	m	struct:__anon9	file:
+unmap	x.c	/^unmap(XEvent *ev)$/;"	f
+usage	st.c	/^usage(void) {$/;"	f
+usedfont	st.c	/^char *usedfont = NULL;$/;"	v
+usedfontsize	st.c	/^double usedfontsize = 0;$/;"	v
+ushort	st.h	/^typedef unsigned short ushort;$/;"	t
+utf8decode	st.c	/^size_t utf8decode(char *c, Rune *u, size_t clen) {$/;"	f
+utf8decodebyte	st.c	/^Rune utf8decodebyte(char c, size_t *i) {$/;"	f
+utf8encode	st.c	/^size_t utf8encode(Rune u, char *c) {$/;"	f
+utf8encodebyte	st.c	/^char utf8encodebyte(Rune u, size_t i) {$/;"	f
+utf8strchr	st.c	/^char * utf8strchr(char *s, Rune u) {$/;"	f
+utf8validate	st.c	/^size_t utf8validate(Rune *u, size_t i) {$/;"	f
+utfbyte	st.c	/^static uchar utfbyte[UTF_SIZ + 1] = {0x80,    0, 0xC0, 0xE0, 0xF0};$/;"	v	file:
+utfmask	st.c	/^static uchar utfmask[UTF_SIZ + 1] = {0xC0, 0x80, 0xE0, 0xF0, 0xF8};$/;"	v	file:
+utfmax	st.c	/^static Rune utfmax[UTF_SIZ + 1] = {0x10FFFF, 0x7F, 0x7FF, 0xFFFF, 0x10FFFF};$/;"	v	file:
+utfmin	st.c	/^static Rune utfmin[UTF_SIZ + 1] = {       0,    0,  0x80,  0x800,  0x10000};$/;"	v	file:
+utmp	st-configh-ignores.h	/^static char *utmp = NULL;$/;"	v
+v	st.h	/^	const void *v;$/;"	m	union:__anon17
+vis	x.c	/^	Visual *vis;$/;"	m	struct:__anon4	file:
+visibility	x.c	/^visibility(XEvent *ev)$/;"	f
+vtiden	st-configh-ignores.h	/^static char vtiden[] = "\\033[?6c";$/;"	v
+w	st.h	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon13
+width	x.c	/^	int width;$/;"	m	struct:__anon6	file:
+win	st.c	/^TermWindow win;$/;"	v
+win	x.c	/^	Window win;$/;"	m	struct:__anon4	file:
+window_state	st.h	/^enum window_state {$/;"	g
+winid	x.c	/^char winid[64];$/;"	v
+wmdeletewin	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon4	file:
+worddelimiters	st-configh-ignores.h	/^static char worddelimiters[] = " `'\\"()[]{}";$/;"	v
+x	st.h	/^		int x, y;$/;"	m	struct:__anon15::__anon16
+x	st.h	/^	int x;$/;"	m	struct:__anon11
+x2col	st.c	/^int x2col(int x) {$/;"	f
+xbell	x.c	/^xbell(int vol)$/;"	f
+xclear	x.c	/^xclear(int x1, int y1, int x2, int y2)$/;"	f
+xclipcopy	x.c	/^void xclipcopy(void) {$/;"	f
+xclippaste	x.c	/^void xclippaste(void) {$/;"	f
+xdrawcursor	x.c	/^xdrawcursor(void)$/;"	f
+xdrawglyph	x.c	/^xdrawglyph(Glyph g, int x, int y)$/;"	f
+xdrawglyphfontspecs	x.c	/^xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, int y)$/;"	f
+xembed	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon4	file:
+xfps	config.h	/^unsigned int xfps = 300; \/\/ higher number here helps with ranger previews$/;"	v
+xgeommasktogravity	x.c	/^xgeommasktogravity(int mask)$/;"	f
+xhints	x.c	/^xhints(void)$/;"	f
+xic	x.c	/^	XIC xic;$/;"	m	struct:__anon4	file:
+xim	x.c	/^	XIM xim;$/;"	m	struct:__anon4	file:
+xinit	x.c	/^void xinit(void) {$/;"	f
+xloadcolor	x.c	/^int xloadcolor(int i, const char *name, Color *ncolor) {$/;"	f
+xloadcols	x.c	/^void xloadcols(void) {$/;"	f
+xloadfont	x.c	/^xloadfont(Font *f, FcPattern *pattern)$/;"	f
+xloadfonts	x.c	/^xloadfonts(char *fontstr, double fontsize)$/;"	f
+xmakeglyphfontspecs	x.c	/^xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len, int x, int y)$/;"	f
+xmalloc	st.c	/^void * xmalloc(size_t len) {$/;"	f
+xrealloc	st.c	/^void * xrealloc(void *p, size_t len) {$/;"	f
+xresize	x.c	/^void xresize(int col, int row) {$/;"	f
+xsel	x.c	/^static XSelection xsel;$/;"	v	file:
+xselpaste	x.c	/^void xselpaste(void) {$/;"	f
+xsetcolorname	x.c	/^int xsetcolorname(int x, const char *name) {$/;"	f
+xsetenv	x.c	/^void xsetenv(void) {$/;"	f
+xsetpointermotion	x.c	/^xsetpointermotion(int set)$/;"	f
+xsetsel	x.c	/^void xsetsel(char *str, Time t) {$/;"	f
+xsettitle	x.c	/^void xsettitle(char *p) {$/;"	f
+xseturgency	x.c	/^void xseturgency(int add) {$/;"	f
+xstrdup	st.c	/^char * xstrdup(char *s) {$/;"	f
+xtarget	x.c	/^	Atom xtarget;$/;"	m	struct:__anon5	file:
+xunloadfont	x.c	/^xunloadfont(Font *f)$/;"	f
+xunloadfonts	x.c	/^xunloadfonts(void)$/;"	f
+xw	x.c	/^static XWindow xw;$/;"	v	file:
+xwinid	x.c	/^xwinid(void)$/;"	f
+xwrite	st.c	/^ssize_t xwrite(int fd, const char *s, size_t len) {$/;"	f
+y	st.h	/^		int x, y;$/;"	m	struct:__anon15::__anon16
+y	st.h	/^	int y;$/;"	m	struct:__anon11
+y2row	st.c	/^int y2row(int y) {$/;"	f
+zoom	st.c	/^void zoom(const Arg *arg) {$/;"	f
+zoomabs	st.c	/^void zoomabs(const Arg *arg) {$/;"	f
+zoomreset	st.c	/^void zoomreset(const Arg *arg) {$/;"	f
