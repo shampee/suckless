@@ -9,11 +9,6 @@ const static SearchEngine searchengines[] = {
     { "gist",   "https://gist.github.com/search?q=%s" },
     { "wiki",   "https://en.wikipedia.org/wiki/%s" },
     { "w",      "https://en.wikipedia.org/wiki/%s" },
-    { "metal",  "https://metal-archives.com/search?searchString=%s&type=band_name" },
-    { "m",      "https://metal-archives.com/search?searchString=%s&type=band_name" },
-    { "discogs","https://www.discogs.com/search?q=%s&btn=&type=all" },
-    { "discog", "https://www.discogs.com/search?q=%s&btn=&type=all" },
-    { "bc",     "https://bandcamp.com/search?q=%s" },
     { "arch",   "https://wiki.archlinux.org/index.php?search=%s" },
     { "gentoo", "https://wiki.gentoo.org/index.php?search=%s" },
     { "r",      "https://reddit.com/r/%s" },
@@ -22,17 +17,12 @@ const static SearchEngine searchengines[] = {
     { "yt",     "https://youtube.com/results?search_query=%s" },
     { "image",  "https://duckduckgo.com/html/?q=!image %s" },
     { "reddit", "https://reddit.com/search?q=%s" },
-    { "pirate", "https://thepiratebay.org/search/%s" },
+    { "torrent","https://torrentz2.eu/search?f=%s" },
     { "think",  "https://thinkwiki.org/w/index.php?search=%s" },
-    { "ebay",   "https://ebay.de/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xthinkp.TRS0&_nkw=%s&_sacat=0" },
-    { "e",      "https://ebay.de/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xthinkp.TRS0&_nkw=%s&_sacat=0" },
+    { "prisjakt","https://www.prisjakt.nu/search?search=%s&searchInProps=true" },
     { "dict",   "https://thefreedictionary.com/%s" },
     { "thes",   "https://thesaurus.com/browse/%s" },
     { "wine",   "https://www.winehq.org/search?q=%s" },
-    { "urban",  "https://www.urbandictionary.com/define.php?term=%s" },
-    { "rs",     "https://oldschool.runescape.wiki/?search=%s" },
-    { "osrs",   "https://oldschool.runescape.wiki/?search=%s" },
-    { "07",   "https://oldschool.runescape.wiki/?search=%s" },
 };
 
 static char *scriptfile = "/home/hmps/etc/suckless/surf/script.js";
@@ -119,7 +109,7 @@ char crossbones_ascii[] = "/home/hmps/usr/bin/ascii/crossbones";
 #define SHIFT GDK_SHIFT_MASK
 static const Key keys[] = {
     { MODKEY,               GDK_KEY_g,       spawn,      SETPROP("_SURF_URI", "_SURF_GO", PROMPT_GO) },
-    { MODKEY,               GDK_KEY_slash,   spawn,      SETSEARCH("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
+    { MODKEY|SHIFT,         GDK_KEY_f,   spawn,      SETSEARCH("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
     { SHIFT,                GDK_KEY_7,       find,       { .i = +1 } },
     { MODKEY,               GDK_KEY_r,       reload,     { .i = 0 } },
     { 0,                    GDK_KEY_F5,      reload,     { .i = 0 } },
@@ -152,8 +142,8 @@ static const Key keys[] = {
     { MODKEY,               GDK_KEY_k,      scroll,     { .i = 'u' } },
     { MODKEY,               GDK_KEY_l,      scroll,     { .i = 'r' } },
     { MODKEY,               GDK_KEY_h,      scroll,     { .i = 'l' } },
-    { MODKEY,               GDK_KEY_f,      scroll,     { .i = 'U' } },
-    { MODKEY,               GDK_KEY_b,      scroll,     { .i = 'D' } },
+    { MODKEY,               GDK_KEY_u,      scroll,     { .i = 'U' } },
+    { MODKEY,               GDK_KEY_d,      scroll,     { .i = 'D' } },
     /* -------------------------------------------------------------------------- */
 
     /* --------------------- Toggles -------------------------------------- */
