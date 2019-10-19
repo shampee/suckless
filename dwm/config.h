@@ -6,7 +6,7 @@ static int BORDER_PX = 0;
 static const int CORNER_RADIUS = 0;
 static const int BAR_HEIGHT = 22; // in pixels
 static const int snap = 0;
-/* static const int round_non_floating = 0; */
+/* static const int round_non_floating = 8; */
 
 // whether to keep the border for terminals if
 // they are the only window on the tag
@@ -19,7 +19,7 @@ static const int warp_mouse = 0;
 /* #include "themes/light-and-black.h" */
 #include "/home/hmps/.cache/wal/colors-wal-dwm.h"
 
-static const char terminal[] = "st";
+static const char terminal[] = "stsize";
 static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
@@ -98,7 +98,7 @@ static const char *chrome[] = {"chromium-browser", NULL};
 static const char *term[] = {"tabbed", "-d", "-c", "-r", "2",
                              "st",     "-w", "''", NULL};
 static const char *ranger[] = {
-    "mksh", "-e",
+    "st", "-e",
     "/usr/bin/ranger", NULL};
 
 /* static const char *ranger[] = { */
