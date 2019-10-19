@@ -1,10 +1,10 @@
-static const int GAP_PX = 10; /* gap pixel between windows */
-static const int start_with_gaps = 5;
+static const int GAP_PX = 20; /* gap pixel between windows */
+static const int start_with_gaps = 1;
 static const int topbar = 0; /* 0 means bottom bar */
 
 static int BORDER_PX = 0;
 static const int CORNER_RADIUS = 0;
-static const int BAR_HEIGHT = 14; // in pixels
+static const int BAR_HEIGHT = 22; // in pixels
 static const int snap = 0;
 /* static const int round_non_floating = 0; */
 
@@ -24,7 +24,7 @@ static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname,
-                                      "-g", "70x30", NULL};
+                                      "-g", "80x30", NULL};
 
 /* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g",
  * "90x26", NULL }; */
@@ -93,20 +93,25 @@ static const char *dmenucmd[] = {"dash", "-c", "${HOME}/bin/menu run -p 'Run:'",
                                  NULL};
 
 // static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
-static const char *surf[] = {"qutebrowser", NULL};
-static const char *chrome[] = {"google-chrome-stable", "--new-window", NULL};
+static const char *surf[] = {"tabbed", "-d", "-c", "vimb", "-e", NULL};
+static const char *chrome[] = {"chromium-browser", NULL};
 static const char *term[] = {"tabbed", "-d", "-c", "-r", "2",
                              "st",     "-w", "''", NULL};
 static const char *ranger[] = {
-    "uxterm", "-e",
-    "source ${HOME}/.profile;cat /home/hmps/.cache/wal/sequences;ranger", NULL};
+    "mksh", "-e",
+    "/usr/bin/ranger", NULL};
+
+/* static const char *ranger[] = { */
+/*     "uxterm", "-e", */
+/*     "source ${HOME}/.profile;cat /home/hmps/.cache/wal/sequences;ranger", NULL}; */
+
 static const char *email[] = {
     "uxterm", "-e", "cat /home/hmps/.cache/wal/sequences;neomutt", NULL};
-// static const char *filechooser[] = { "pcmanfm", NULL };
+static const char *filechooser[] = { "pcmanfm", NULL };
 static const char *clipboard[] = {"clip", NULL};
 static const char *dedit[] = {"dedit", NULL};
 static const char *tasks[] = {"tasks", NULL};
-static const char *rude[] = {"rude", NULL};
+static const char *rude[] = {"torbrowser", NULL};
 
 static const char *voltoggle[] = {"dash", "-c", "amixer set Master toggle",
                                   NULL};
@@ -186,8 +191,8 @@ const static Key keys[] = {
     /* // ------------------------------------------------------------------ //
      */
     {0, 74, spawn, {.v = record}},       // F8
-    {0, 75, spawn, {.v = togglerecord}}, // F9
-    {0, 76, spawn, {.v = stoprecord}},   // F10
+    {0, 75, spawn, {.v = stoprecord}},   // F9
+    {0, 76, spawn, {.v = togglerecord}}, // F10
     /* // ------------------------------------------------------------------ //
      */
     {Mod1Mask, 44, focusstack, {.i = +1}}, // j

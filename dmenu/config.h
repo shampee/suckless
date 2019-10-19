@@ -1,7 +1,7 @@
 static int topbar = 0;  /* -b  option; if 0, dmenu appears at bottom     */
 
 static const char *fonts[] = {
-    "San Francisco Display:pixelsize=16:antialias=true:autohint=true"
+    "San Francisco Text:pixelsize=16:antialias=true:autohint=true"
     /* "Share Tech Mono:pixelsize=16:antialias=true:autohint=true" */
     /* "Share Tech Mono:pixelsize=14:antialias=true:autohint=true" */
     /* "Terminus:pixelsize=14:antialias=false:autohint=false" */

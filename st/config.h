@@ -52,8 +52,8 @@ int borderpx = 22; /* Internal border */
 /* #include "themes/terminaldotsexy/default-color-scheme.h" */
 /*  -------------------------------------------------------  */
 
-unsigned int cols = 69;
-unsigned int rows = 22;
+unsigned int cols = 80;
+unsigned int rows = 30;
 static char shell[] = "/bin/mksh";
 /* static char shell[] = "/bin/ksh"; */
 
@@ -80,10 +80,10 @@ MouseKey mkeys[] = {
 	{ Button5,              XK_NO_MOD,      kscrolldown,    {.i =  1} },
     { Button4,              ControlMask,    zoom,           {.f =  +2} },
 	{ Button5,              ControlMask,    zoom,           {.f =  -2} },
-    /* ------------------------------------------------------- */ 
+    /* ------------------------------------------------------- */
     { Button3,              XK_NO_MOD,      plumb,          { 0 } },
     /* { Button2,              XK_NO_MOD,      execute,        { 0 } }, */
-    /* ------------------------------------------------------- */ 
+    /* ------------------------------------------------------- */
 };
 
 Shortcut shortcuts[] = {
@@ -105,6 +105,6 @@ Shortcut shortcuts[] = {
     // note copyurl has been edited to also open with xdg-open, look in st.c
 	{ Mod4Mask,              XK_l,           copyurl,        {.i =  0} },
     /* -------------------------------------------------------------------------- */
-	/* { ControlMask,              XK_I,           iso14755,       {.i =  0} }, */ 
+	/* { ControlMask,              XK_I,           iso14755,       {.i =  0} }, */
     /* { XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} }, */
 };

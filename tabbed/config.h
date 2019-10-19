@@ -1,6 +1,5 @@
-static const char font[] = "cherry:pixelsize=14:antialias=false:autohint=false";
-/* static const char font[]        = "San Francisco
- * Text:pixelsize=16:antialias=true:autohint=true"; */
+/* static const char font[] = "cherry:pixelsize=14:antialias=false:autohint=false"; */
+static const char font[]        = "San Francisco Text:pixelsize=16:antialias=true:autohint=true";
 /* static const char font[]        = "Share Tech
  * Mono:pixelsize=18:antialias=true:autohint=true"; */
 /* static const char font[]        = "Share Tech
