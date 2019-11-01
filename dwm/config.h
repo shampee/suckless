@@ -19,15 +19,12 @@ static const int warp_mouse = 0;
 /* #include "themes/light-and-black.h" */
 #include "/home/hmps/.cache/wal/colors-wal-dwm.h"
 
-static const char terminal[] = "stsize";
+static const char terminal[] = "st";
 static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname,
-                                      "-g", "80x30", NULL};
-
-/* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g",
- * "90x26", NULL }; */
+                                      "-g", "80x30", NULL}; /* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "90x26", NULL }; */
 /* static const char *scratchpadcmd[] = {"mksh", "-c",
    "${HOME}/bin/animuterm", */
 /*                                       NULL}; */
@@ -93,7 +90,7 @@ static const char *dmenucmd[] = {"dash", "-c", "${HOME}/bin/menu run -p 'Run:'",
                                  NULL};
 
 // static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
-static const char *surf[] = {"tabbed", "-d", "-c", "vimb", "-e", NULL};
+static const char *surf[] = {"qutebrowser", NULL};
 static const char *chrome[] = {"chromium-browser", NULL};
 static const char *term[] = {"tabbed", "-d", "-c", "-r", "2",
                              "st",     "-w", "''", NULL};

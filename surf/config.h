@@ -1,6 +1,6 @@
 #include "surf-configh-ignore.h"
-#define HOMEPAGE "file:///home/hmps/usr/startpage/index2.html"
-const static char *searchengine = "https://duckduckgo.com/html/?q=";
+#define HOMEPAGE "https://wiki.archlinux.org"
+const static char *searchengine = "https://google.se/search?q=%s";
 const static SearchEngine searchengines[] = {
     { "d",      "https://duckduckgo.com/html/?q=%s" },
     { "g",      "https://google.se/search?q=%s"   },
@@ -60,7 +60,7 @@ char crossbones_ascii[] = "/home/hmps/usr/bin/ascii/crossbones";
 #define PROMPT_GO   "Go:"
 #define PROMPT_FIND "Find:"
 
-/* ------------------------------------------------------- */ 
+/* ------------------------------------------------------- */
 // This sets all the ids for the opening terminal to 'curl'.
 // This way you can set that 'curl' terminal to be opened floating
 // Which stops the annoying flashing/moving around of windows on a download.
@@ -75,7 +75,7 @@ char crossbones_ascii[] = "/home/hmps/usr/bin/ascii/crossbones";
         /* "st -e /bin/sh -c \"aria2c -U '$1'" \ */
         /* " --referer '$2' --load-cookies $3 --save-cookies $3 '$0';" \ */
 /* } */
-/* ------------------------------------------------------- */ 
+/* ------------------------------------------------------- */
 
 #define VIDEOPLAY(u) {\
         .v = (const char *[]){ "/bin/sh", "-c", \
@@ -109,7 +109,7 @@ char crossbones_ascii[] = "/home/hmps/usr/bin/ascii/crossbones";
 #define SHIFT GDK_SHIFT_MASK
 static const Key keys[] = {
     { MODKEY,               GDK_KEY_g,       spawn,      SETPROP("_SURF_URI", "_SURF_GO", PROMPT_GO) },
-    { MODKEY|SHIFT,         GDK_KEY_f,   spawn,      SETSEARCH("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
+    { MODKEY|SHIFT,         GDK_KEY_f,       spawn,      SETSEARCH("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
     { SHIFT,                GDK_KEY_7,       find,       { .i = +1 } },
     { MODKEY,               GDK_KEY_r,       reload,     { .i = 0 } },
     { 0,                    GDK_KEY_F5,      reload,     { .i = 0 } },

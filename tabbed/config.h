@@ -1,5 +1,5 @@
 /* static const char font[] = "cherry:pixelsize=14:antialias=false:autohint=false"; */
-static const char font[]        = "San Francisco Text:pixelsize=16:antialias=true:autohint=true";
+static const char font[]        = "San Francisco Text:pixelsize=16:antialias=true:autohint=true;all-the-icons:pixelsize=16:antialias=true:autohint=true";
 /* static const char font[]        = "Share Tech
  * Mono:pixelsize=18:antialias=true:autohint=true"; */
 /* static const char font[]        = "Share Tech
@@ -66,8 +66,8 @@ static const Key keys[] = {
     {ControlMask, XK_n, spawn, {0}},
 
     /* ------ shifts to next tab ------ */
-    {ControlMask | ShiftMask, XK_k, rotate, {.i = +1}},
-    {ControlMask | ShiftMask, XK_j, rotate, {.i = -1}},
+    {ControlMask | ShiftMask, XK_k, rotate, {.i = -1}},
+    {ControlMask | ShiftMask, XK_j, rotate, {.i = +1}},
 
     {ControlMask, XK_Tab, rotate, {.i = +1}},
     {ControlMask | ShiftMask, XK_Tab, rotate, {.i = -1}},

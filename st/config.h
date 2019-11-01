@@ -1,7 +1,7 @@
 #include "st-configh-ignores.h"
 
 /* --------------- Font ---------------------------------- */
-char font[] = "SFMono:pixelsize=14:antialias=true:autohint=true";
+char font[] = "SFMono:pixelsize=14:antialias=true:autohint=true;all-the-icons:pixelsize=16:antialias=true:autohint=true";
 /* char font[] = "Terminus:pixelsize=12:antialias=false:autohint=false"; */
 /* char font[] = "Terminus:pixelsize=14:antialias=false:autohint=false"; */
 /* char font[] = "xos4 Terminus:pixelsize=14:antialias=false:autohint=false"; */
