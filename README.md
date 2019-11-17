@@ -1,9 +1,5 @@
 # suckless
 
-People have been requesting this for a while.
-
-I'll get around to making patches eventually, but this
-will be a central repo to store everything.
 
 ### misc screenshots:
 
@@ -11,7 +7,7 @@ will be a central repo to store everything.
 
 **[dwm](https://github.com/MitchWeaver/suckless/tree/master/dwm)**:
 
-![dwm](https://i.imgur.com/yJYTILr.jpg)
+![dwm](https://i.imgur.com/2AZ040F.png)
 
 **[surf](https://github.com/MitchWeaver/suckless/tree/master/surf)**:
 
@@ -35,6 +31,6 @@ will be a central repo to store everything.
 
 -------
 
-dotfiles: http://github.com/mitchweaver/dots
+dotfiles: http://github.com/shampeedots
 
-~/bin: http://github.com/mitchweaver/bin
+~/bin: http://github.com/shampee/bin
