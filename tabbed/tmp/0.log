@@ -1,0 +1,8 @@
+Entering playback thread (ALSA).
+Get period size: 2760  buffer size: 22050
+Playing generated audio sine wave
+Entering capture thread (ALSA).
+Cannot open PCM capture device: No such file or directory(-2)
+Playback completed.
+Exit capture thread fail: -2
+alsabat -c1 --saveplay default_mono.wav

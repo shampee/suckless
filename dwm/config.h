@@ -4,7 +4,7 @@ static const int topbar = 0; /* 0 means bottom bar */
 
 static int BORDER_PX = 0;
 static const int CORNER_RADIUS = 0;
-static const int BAR_HEIGHT = 22; // in pixels
+static const int BAR_HEIGHT = 0; // in pixels
 static const int snap = 0;
 /* static const int round_non_floating = 8; */
 
@@ -24,10 +24,7 @@ static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname,
-                                      "-g", "80x30", NULL}; /* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "90x26", NULL }; */
-/* static const char *scratchpadcmd[] = {"mksh", "-c",
-   "${HOME}/bin/animuterm", */
-/*                                       NULL}; */
+                                      "-g", "80x30", NULL}; /* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "00x30", NULL }; */
 
 static const int NUM_WORKSPACES = 10;
 static const char *tags[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
@@ -91,7 +88,7 @@ static const char *dmenucmd[] = {"dash", "-c", "${HOME}/bin/menu run -p 'Run:'",
 
 // static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
 static const char *surf[] = {"qutebrowser", NULL};
-static const char *chrome[] = {"chromium-browser", NULL};
+static const char *chrome[] = {"firefox", NULL};
 static const char *term[] = {"tabbed", "-d", "-c", "-r", "2",
                              "st",     "-w", "''", NULL};
 static const char *ranger[] = {

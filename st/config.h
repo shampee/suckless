@@ -1,7 +1,7 @@
 #include "st-configh-ignores.h"
 
 /* --------------- Font ---------------------------------- */
-char font[] = "SFMono:pixelsize=14:antialias=true:autohint=true;all-the-icons:pixelsize=16:antialias=true:autohint=true";
+char font[] = "SFMono:pixelsize=13:antialias=true:autohint=true;all-the-icons:pixelsize=16:antialias=true:autohint=true";
 /* char font[] = "Terminus:pixelsize=12:antialias=false:autohint=false"; */
 /* char font[] = "Terminus:pixelsize=14:antialias=false:autohint=false"; */
 /* char font[] = "xos4 Terminus:pixelsize=14:antialias=false:autohint=false"; */
@@ -19,8 +19,8 @@ char font[] = "SFMono:pixelsize=14:antialias=true:autohint=true;all-the-icons:pi
 
 /* ---------------- Border ------------------------------- */
 /* int borderpx = 28; /1* Internal border *1/ */
-int borderpx = 22; /* Internal border */
-/* int borderpx = 14; /1* Internal border *1/ */
+/* int borderpx = 22; /1* Internal border *1/ */
+int borderpx = 14; /* Internal border */
 /* ------------------------------------------------------- */
 
 /* --------------- Themes -------------------------------- */
