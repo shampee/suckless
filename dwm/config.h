@@ -23,8 +23,7 @@ static const char terminal[] = "st";
 static const char editor[] = "nvim";
 
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname,
-                                      "-g", "80x30", NULL}; /* static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "00x30", NULL }; */
+static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname, "-g", "80x30", NULL};
 
 static const int NUM_WORKSPACES = 10;
 static const char *tags[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
@@ -89,18 +88,15 @@ static const char *dmenucmd[] = {"dash", "-c", "${HOME}/bin/menu run -p 'Run:'",
 // static const char *surf[] = { "tabbed", "-d", "-c", "surf", "-e", NULL };
 static const char *surf[] = {"qutebrowser", NULL};
 static const char *chrome[] = {"firefox", NULL};
-static const char *term[] = {"tabbed", "-d", "-c", "-r", "2",
-                             "st",     "-w", "''", NULL};
-static const char *ranger[] = {
-    "st", "-e",
-    "/usr/bin/ranger", NULL};
+static const char *term[] = {"tabbed", "-d", "-c", "-r", "2", "st", "-w", "''", NULL};
+static const char *ranger[] = { "xterm -ti vt340", "-e", "/home/hmps/.local/bin/lf", NULL};
 
 /* static const char *ranger[] = { */
 /*     "uxterm", "-e", */
 /*     "source ${HOME}/.profile;cat /home/hmps/.cache/wal/sequences;ranger", NULL}; */
 
 static const char *email[] = {
-    "uxterm", "-e", "cat /home/hmps/.cache/wal/sequences;neomutt", NULL};
+    "xterm -ti vt340", "-e", "cat /home/hmps/.cache/wal/sequences;neomutt", NULL};
 static const char *filechooser[] = { "pcmanfm", NULL };
 static const char *clipboard[] = {"clip", NULL};
 static const char *dedit[] = {"dedit", NULL};
